@@ -93,23 +93,29 @@ html {
     list-style: none;
     padding-left: 0;
     background-color: var(--white-color);
-    min-width: 150px;
+    min-width: 160px;
     position: absolute;
     left: -10px;
-    top: 100%;
+    top: var(--header-height);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .sub-menu__item {
-    padding: 8px 4px;
+    padding: 8px 10px;
+    border-bottom: 1px solid #E9E9E9;
 }
-
+.sub-menu__item:last-child{
+    border-bottom: none;
+}
 .sub-menu-item__link {
     text-decoration: none;
     color: #808080;
     font-size: 1.2rem;
     display: block;
     width: 100%;
+    font-weight: 500;
 }
 
 .sub-menu-item__link:hover {
@@ -126,6 +132,7 @@ html {
 .phone__number {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .header-navbar__search,
@@ -300,7 +307,7 @@ html {
 
 /* khong gian lam viec */
 .working-space {
-    background: linear-gradient(rgba(38, 38, 38, 0.5), rgba(38, 38, 38, 0.5)), url(/access/img/15.png) top center / cover no-repeat;
+    background: linear-gradient(rgba(38, 38, 38, 0.5), rgba(38, 38, 38, 0.5)), url(/assets/img/15.png) top center / cover no-repeat;
     height: 340px;
 }
 
