@@ -61,6 +61,7 @@ html {
 .header-navbar__item:hover {
     color: #262626;
     cursor: pointer;
+    border-bottom: 2px solid #E70000;
 }
 
 .header-navbar__item:hover .header-navbar__sub-menu {
@@ -95,11 +96,10 @@ html {
     background-color: var(--white-color);
     min-width: 160px;
     position: absolute;
-    left: -10px;
-    top: var(--header-height);
+    left: -12px;
+    top: calc(100% + 3px);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
     border-radius: 2px;
-    overflow: hidden;
 }
 
 .sub-menu__item {
@@ -354,6 +354,7 @@ html {
     --active: var(--primary-color);
     color: var(--text-color);
     margin-bottom: 72px;
+    fill: var(--primary-color);
 }
 
 .about-decription {
