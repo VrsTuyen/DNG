@@ -1653,9 +1653,15 @@ html {
     max-height: 405px;
     margin-right: 10px;
     margin-top: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
-
+.news-recruit-img__link{
+    cursor: pointer;
+    text-decoration: none;
+}
+.news-recruit-img__link:hover{
+    opacity: .8;
+}
 .news-navigation{
     width: 100%;
     margin: 72px ;
@@ -1675,6 +1681,10 @@ html {
     font-weight: 400;
     line-height: 1.8rem;
     margin: 0 16px;
+    user-select: none;
+}
+.news-navigation__button:hover{
+    cursor: pointer;
 }
 .news-navigation__button:first-child{
     margin-left: 0;
@@ -1684,5 +1694,8 @@ html {
 }
 .news-navigation__button--active{
     background-color: var(--primary-color);
-    color: var(--white-color);
+    color: var(--white-color);;
+}
+.news-navigation__button:hover.news-navigation__button--active{
+    cursor: default;
 }
