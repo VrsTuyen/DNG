@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>DNG</title>
+</head>
+
+<body>
+    <div id="main">
+        <!-- header -->
+        <header class="header">
+            <div class="grid wide">
+                <div class="row header__navbar ">
+                    <div class="col l-3 header-navbar-img__link">
+                        <a href="/" class="header-navbar-link">
+                            <img src="./assets/img/dng-logo.png" alt="DNG Việt Nam">
+                        </a>
+                    </div>
+                    <div class="col nav-bar full-height">
+                        <ul class="header-navbar__list">
+                            <li class="header-navbar__item ">
+                                <a href="index.html" class="header-navbar__link">Về DNG</a>
+                            </li>
+                            <li class="header-navbar__item">
+                                <a href="project.html" class="header-navbar__link">
+                                    Dự án</a>
+                                <div class="header-navbar__icon">
+                                    <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
+                                            fill="#808080" />
+                                    </svg>
+                                </div>
+                                <ul class="header-navbar__sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu-item__link">Chung cư</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu-item__link">Biệt thự</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu-item__link">Shop house</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu-item__link">Biệt thự biển</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu-item__link">Nhà liền kề</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-navbar__item header-navbar-item--active">
+                                <a href="recruit.html" class="header-navbar__link">Tuyển dụng</a>
+                                <div class="header-navbar__icon">
+                                    <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
+                                            fill="#808080" />
+                                    </svg>
+                                </div>
+                                <ul class="header-navbar__sub-menu">
+                                    <li class="sub-menu__item"><a href="#" class="sub-menu-item__link">Triết lý nhân
+                                            sự</a>
+                                    </li>
+                                    <li class="sub-menu__item"><a href="#" class="sub-menu-item__link">Chính sách tuyển
+                                            dụng</a>
+                                    </li>
+                                    <li class="sub-menu__item"><a href="#" class="sub-menu-item__link">Quyền lợi</a>
+                                    </li>
+                                    <li class="sub-menu__item"><a href="#" class="sub-menu-item__link">Vị trí tuyển
+                                            dụng</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-navbar__item"><a href="news.html" class="header-navbar__link">Tin tức</a>
+                            </li>
+                            <li class="header-navbar__item"><a href="#" class="header-navbar__link">Hoạt động</a></li>
+                            <li class="header-navbar__item"><a href="#" class="header-navbar__link">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-3">
+                        <div class="search">
+                            <a href="tel:335 08 15 08 90" class="phone__number">
+                                <div class="header-navbar__phone">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="header-navbar-phone__icon">
+                                        <path
+                                            d="M14.4804 1.43358C14.6444 1.46092 14.7538 1.54295 14.8632 1.65233C14.9452 1.78905 14.9999 1.92577 14.9999 2.06248C14.9999 4.35936 14.4257 6.49217 13.2772 8.46092C12.1288 10.375 10.6249 11.9062 8.71082 13.0273C6.74207 14.1758 4.60926 14.75 2.31239 14.75C2.14832 14.75 2.01161 14.7226 1.90223 14.6133C1.76551 14.5312 1.68348 14.3945 1.68348 14.2305L1.02723 11.3867C0.972543 11.25 0.999887 11.1133 1.08192 10.9492C1.13661 10.8125 1.24598 10.7031 1.41004 10.6484L4.47254 9.33592C4.58192 9.28123 4.71864 9.28123 4.8827 9.30858C5.01942 9.33592 5.12879 9.41795 5.23817 9.52733L6.57801 11.168C7.64442 10.6758 8.60145 10.0195 9.42176 9.17186C10.2421 8.35155 10.9257 7.39452 11.4179 6.32811L9.77723 4.96092C9.66786 4.87889 9.58582 4.76952 9.55848 4.6328C9.50379 4.49608 9.53114 4.35936 9.58582 4.1953L10.8983 1.1328C10.953 1.02342 11.035 0.914047 11.1991 0.832016C11.3358 0.777329 11.4725 0.749985 11.6366 0.777329L14.4804 1.43358Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <span class="header-navbar-phone-number">335 08 15 08 90</span>
+                            </a>
+                            <label id="label-checkbox" for="checkbox__search">
+                                <input type="checkbox" name="" id="checkbox__search" hidden>
+                                <div class="header__search">
+                                    <input type="text" name="" id="header-search-input">
+                                </div>
+                                <div class="header-navbar__search">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="header__search-icon">
+                                        <path
+                                            d="M13.918 13.5742C13.9727 13.6289 14 13.7109 14 13.793C14 13.9023 13.9727 13.9844 13.918 14.0391L13.2891 14.6406C13.207 14.7227 13.125 14.75 13.043 14.75C12.9336 14.75 12.8789 14.7227 12.8242 14.6406L9.48828 11.332C9.43359 11.2773 9.40625 11.1953 9.40625 11.1133V10.7305C8.88672 11.168 8.3125 11.5234 7.68359 11.7695C7.02734 12.0156 6.37109 12.125 5.6875 12.125C4.64844 12.125 3.69141 11.8789 2.81641 11.3594C1.94141 10.8672 1.25781 10.1836 0.765625 9.30859C0.246094 8.43359 0 7.47656 0 6.4375C0 5.39844 0.246094 4.46875 0.765625 3.59375C1.25781 2.71875 1.94141 2.03516 2.81641 1.51562C3.69141 1.02344 4.64844 0.75 5.6875 0.75C6.72656 0.75 7.65625 1.02344 8.53125 1.51562C9.40625 2.03516 10.0898 2.71875 10.6094 3.59375C11.1016 4.46875 11.375 5.39844 11.375 6.4375C11.375 7.14844 11.2383 7.80469 10.9922 8.43359C10.7461 9.08984 10.418 9.66406 9.98047 10.1562H10.3633C10.4453 10.1562 10.5273 10.1836 10.582 10.2383L13.918 13.5742ZM5.6875 10.8125C6.45312 10.8125 7.19141 10.6211 7.875 10.2383C8.53125 9.85547 9.07812 9.30859 9.46094 8.625C9.84375 7.96875 10.0625 7.23047 10.0625 6.4375C10.0625 5.67188 9.84375 4.93359 9.46094 4.25C9.07812 3.59375 8.53125 3.04688 7.875 2.66406C7.19141 2.28125 6.45312 2.0625 5.6875 2.0625C4.89453 2.0625 4.15625 2.28125 3.5 2.66406C2.81641 3.04688 2.26953 3.59375 1.88672 4.25C1.50391 4.93359 1.3125 5.67188 1.3125 6.4375C1.3125 7.23047 1.50391 7.96875 1.88672 8.625C2.26953 9.30859 2.81641 9.85547 3.5 10.2383C4.15625 10.6211 4.89453 10.8125 5.6875 10.8125Z"
+                                            fill="white" />
+                                    </svg>
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class='header__close-icon'>
+                                        <line x1="19.1429" y1="6.41434" x2="6.41494" y2="19.1423" stroke="white" />
+                                        <line x1="6.41514" y1="6.31344" x2="19.1431" y2="19.0414" stroke="white" />
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- main -->
+        <div class="main">
+            
+            <div class="recruit">
+                <div class="slide-img" style="background: linear-gradient(to right,
+                rgba(40, 40, 40, 1),
+                rgba(58, 58, 57, 0)),
+            url(./assets/img/image-8.png) top center / cover no-repeat;">
+                    <div class="slide-img-button__left">
+                        <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.16757 14.6768L12.8821 1.40028C13.6199 0.564131 15 1.08596 15 2.20107C15 2.48639 14.8992 2.76253 14.7154 2.98076L4.83515 14.7116C4.2081 15.4561 4.2081 16.5439 4.83515 17.2884L14.7154 29.0192C14.8992 29.2375 15 29.5136 15 29.7989C15 30.914 13.6199 31.4359 12.8821 30.5997L1.16757 17.3232C0.500469 16.5672 0.500468 15.4328 1.16757 14.6768Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <div class="silde-content">
+                        <div class="silde-content__heading">
+                            <h2 class="content-heading__text recruit-slide__heading">
+                                Môi trường chuyên nghiệp, năng động
+                            </h2>
+                        </div>
+                        <div class="navigation-button">
+                            <div class="derection-button derection-button--active"></div>
+                            <div class="derection-button"></div>
+                            <div class="derection-button"></div>
+                        </div>
+                    </div>
+                    <div class="slide-img-button__right">
+                        <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.16757 14.6768L12.8821 1.40028C13.6199 0.564131 15 1.08596 15 2.20107C15 2.48639 14.8992 2.76253 14.7154 2.98076L4.83515 14.7116C4.2081 15.4561 4.2081 16.5439 4.83515 17.2884L14.7154 29.0192C14.8992 29.2375 15 29.5136 15 29.7989C15 30.914 13.6199 31.4359 12.8821 30.5997L1.16757 17.3232C0.500469 16.5672 0.500468 15.4328 1.16757 14.6768Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="recruit__interest">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12">
+                                <h2 class="h2-heading">Quyền lợi tại DNG</h2>
+                                <div class="row">
+                                    <div class="col l-6">
+                                        <div class="recruit-interest__img">
+                                            <img src="./assets/img/image-18.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 recruit-interest-content">
+                                        <div class="recruit-interest__decription">
+                                            <p class="recruit-interest-decription__p">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                                eleifend bibendum eros id tempus. Donec ornare tellus in lectus
+                                                efficitur imperdiet. Nunc luctus metus ac odio mattis, non
+                                                semper felis tincidunt. In vel orci lorem. Suspendisse hendrerit
+                                                sem nec tincidunt molestie.
+                                            </p>
+                                            <p class="recruit-interest-decription__p">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Inventore eos facilis est repellendus voluptatum atque illum, in
+                                                deleniti ducimus obcaecati, necessitatibus sed dolorem! Non
+                                                tempora velit saepe enim? Voluptatibus, voluptatum?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recruit__career-orientation bg-1">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 ">
+                                <div class="implemented-nav recruit-career-orientation-nav">
+                                    <div class="recuit__orientation-heading white-color">
+                                        <h2 class="h2-heading">Định hướng nghề nghiệp</h2>
+                                    </div>
+                                    <ul class="implemented-nav__list white-color">
+                                        <li class="implemented-nav__item implemented-nav-item--active">
+                                            <a href="" class="implemented-nav-item__link">Chuyên viên tư vấn</a>
+                                        </li>
+                                        <li class="implemented-nav__item">
+                                            <a href="" class="implemented-nav-item__link">Telesale</a>
+                                        </li>
+                                        <li class="implemented-nav__item">
+                                            <a href="" class="implemented-nav-item__link">Marketing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-6 recruit-career-orientation__content white-color">
+                                        <h3 class="recruit-career-orientation__heading ">Chuyên viên tư vấn</h3>
+                                        <p class="recruit-career-orientation_p">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Qui, aspernatur voluptatum.
+                                            Praesentium debitis repellendus vel harum hic cumque nemo,
+                                            quia illum autem,
+                                            atque ex maxime tempora quam sunt laudantium enim.</p>
+                                    </div>
+                                    <div class="col l-6">
+                                        <img src="./assets/img/image-7.png" alt=""
+                                            class="recruit-career-orientation-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recruit__career-orientation people-bg">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 ">
+                                <div class="implemented-nav recruit-career-orientation-nav">
+                                    <div class="recuit__orientation-heading">
+                                        <h2 class="h2-heading ">Chính sách đãi ngộ</h2>
+                                    </div>
+                                    <ul class="implemented-nav__list black-color">
+                                        <li class="implemented-nav__item implemented-nav-item--active">
+                                            <a href="" class="implemented-nav-item__link">Chuyên viên tư vấn</a>
+                                        </li>
+                                        <li class="implemented-nav__item">
+                                            <a href="" class="implemented-nav-item__link">Telesale</a>
+                                        </li>
+                                        <li class="implemented-nav__item">
+                                            <a href="" class="implemented-nav-item__link">Marketing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-6">
+                                        <img src="./assets/img/image-13.png" alt=""
+                                            class="recruit-career-orientation-img">
+                                    </div>
+                                    <div class="col l-6 recruit-career-orientation__content black-color">
+                                        <h3 class="recruit-career-orientation__heading primary-color">Phát triển
+                                            nhân viên</h3>
+                                        <p class="recruit-career-orientation_p">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Qui, aspernatur voluptatum.
+                                            Praesentium debitis repellendus vel harum hic cumque nemo,
+                                            quia illum autem,
+                                            atque ex maxime tempora quam sunt laudantium enim.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recruit__come-with-us">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12">
+                                <h2 class="h2-heading ">Đến với DNG, bạn chỉ cần:</h2>
+                            </div>
+                            <div class="col l-12">
+                                <div class="row recruit-come-with-us__content">
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__decription">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Id quisquam dolores fugiat sequi obcaecati!
+                                            Officiis rerum beatae voluptatem corrupti commodi modi aperiam
+                                            cumque?
+                                            Eum maxime rem quos tempore porro? Laudantium!
+                                        </div>
+                                    </div>
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__img">
+                                            <img src="./assets/img/image2.2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12">
+                                <div class="row recruit-come-with-us__content">
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__decription">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Id quisquam dolores fugiat sequi obcaecati!
+                                            Officiis rerum beatae voluptatem corrupti commodi modi aperiam
+                                            cumque?
+                                            Eum maxime rem quos tempore porro? Laudantium!
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__img">
+                                            <img src="./assets/img/image2.1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12">
+                                <div class="row recruit-come-with-us__content">
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__decription">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Id quisquam dolores fugiat sequi obcaecati!
+                                            Officiis rerum beatae voluptatem corrupti commodi modi aperiam
+                                            cumque?
+                                            Eum maxime rem quos tempore porro? Laudantium!
+                                        </div>
+                                    </div>
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__img">
+                                            <img src="./assets/img/image2.3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12">
+                                <div class="row recruit-come-with-us__content">
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__decription">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Id quisquam dolores fugiat sequi obcaecati!
+                                            Officiis rerum beatae voluptatem corrupti commodi modi aperiam
+                                            cumque?
+                                            Eum maxime rem quos tempore porro? Laudantium!
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col l-6">
+                                        <div class="recruit-come-with-us__img">
+                                            <img src="./assets/img/image2.4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vacancies">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 vacancies__heading">
+                                <h2 class="h2-heading">Vị trí tuyển dụng</h2>
+                            </div>
+                            <table class="vacancies__table">
+                                <tr class="vacancies-table-heading">
+                                    <th>Vị trí tuyển dụng</th>
+                                    <th>Mã ứng tuyển</th>
+                                    <th>Số lượng</th>
+                                    <th>Địa điểm</th>
+                                    <th>Ngày hết hạn</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Giám đốc điều hành khu vực
+                                        (TPHCM, Phan Thiết, Khánh Hoà, Cần Thơ)
+                                    </td>
+                                    <td>NVL0024</td>
+                                    <td>10</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Giám đốc điều hành (Golf)
+                                    </td>
+                                    <td>NVL0021</td>
+                                    <td>05</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Giám đốc điều hành (Safari)
+                                    </td>
+                                    <td>NVL0022</td>
+                                    <td>05</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc đầu tư
+                                    </td>
+                                    <td>NVL0077</td>
+                                    <td>05</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc chăm sóc khách hàng
+                                    </td>
+                                    <td>NVL0056</td>
+                                    <td>06</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc công nghệ thông tin
+                                    </td>
+                                    <td>NVL0071</td>
+                                    <td>04</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc đảm bảo chất lượng
+                                    </td>
+                                    <td>NVL0076</td>
+                                    <td>04</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc đào tạo
+                                    </td>
+                                    <td>NVL0082</td>
+                                    <td>04</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc dự toán khối lượng
+                                    </td>
+                                    <td>NVL0072</td>
+                                    <td>02</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc dự toán ngân sách
+                                    </td>
+                                    <td>NVL0073</td>
+                                    <td>04</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc hậu mãi
+                                    </td>
+                                    <td>NVL0065</td>
+                                    <td>04</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc hoạch định & phân tích tài chính
+                                    </td>
+                                    <td>NVL0068</td>
+                                    <td>04</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc hoạch định & triển khai xây dựng
+                                    </td>
+                                    <td>NVL0074</td>
+                                    <td>04</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giám đốc kinh doanh (TPHCM, Phan Thiết, Khánh Hoà, Cần Thơ)
+                                    </td>
+                                    <td>NVL0055</td>
+                                    <td>10</td>
+                                    <td>TP.Hồ Chí Minh</td>
+                                    <td>31/03/2019</td>
+                                    <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row footer__separator">
+                    <div class="col l-2">
+                        <img src="./assets/img/dng-logo.png" alt="">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <div class="footer-item__content">
+                                    <div class="footer-item-content__icon">
+                                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.3438 8.30859C13.3438 8.19922 13.2891 8.11719 13.2344 8.03516L8.09375 3.82422C8.01172 3.76953 7.92969 3.74219 7.875 3.74219C7.79297 3.74219 7.71094 3.76953 7.65625 3.82422L2.51562 8.03516C2.43359 8.11719 2.40625 8.19922 2.40625 8.30859V12.2188C2.40625 12.4102 2.46094 12.5742 2.59766 12.6836C2.70703 12.8203 2.87109 12.875 3.0625 12.875H6.23438C6.31641 12.875 6.39844 12.8477 6.45312 12.793C6.50781 12.7383 6.5625 12.6562 6.5625 12.5469V9.48438C6.5625 9.40234 6.58984 9.32031 6.64453 9.26562C6.69922 9.21094 6.78125 9.15625 6.89062 9.15625H8.85938C8.94141 9.15625 9.02344 9.21094 9.07812 9.26562C9.13281 9.32031 9.1875 9.40234 9.1875 9.48438V12.5469C9.1875 12.6562 9.21484 12.7383 9.26953 12.793C9.32422 12.8477 9.40625 12.875 9.51562 12.875H12.6875C12.8516 12.875 13.0156 12.8203 13.1523 12.6836C13.2617 12.5742 13.3438 12.4102 13.3438 12.2188V8.30859ZM15.6406 6.64062C15.6953 6.69531 15.7227 6.77734 15.7227 6.85938C15.7227 6.96875 15.7227 7.05078 15.668 7.10547L14.9844 7.95312C14.9297 8.03516 14.8477 8.0625 14.7656 8.0625C14.6562 8.0625 14.5742 8.03516 14.5195 7.98047L8.09375 2.70312C8.01172 2.64844 7.92969 2.62109 7.875 2.62109C7.79297 2.62109 7.71094 2.64844 7.65625 2.70312L1.23047 7.98047C1.14844 8.03516 1.06641 8.0625 0.984375 8.0625C0.875 8.0625 0.820312 8.03516 0.765625 7.95312L0.0820312 7.10547C0.0273438 7.05078 0 6.96875 0 6.85938C0 6.77734 0.0546875 6.69531 0.109375 6.64062L7.05469 0.925781C7.27344 0.734375 7.54688 0.625 7.875 0.625C8.17578 0.625 8.44922 0.734375 8.72266 0.925781L11.1562 2.94922V0.953125C11.1562 0.871094 11.1836 0.789062 11.2383 0.734375C11.293 0.679688 11.375 0.625 11.4844 0.625H13.0156C13.0977 0.625 13.1797 0.679688 13.2344 0.734375C13.2891 0.789062 13.3438 0.871094 13.3438 0.953125V4.75391L15.6406 6.64062Z"
+                                                fill="#434343" />
+                                        </svg>
+                                    </div>
+                                    <p class="footer-item-content__title">
+                                        Tầng 4, TTTM V+, Tòa Hòa Bình Green City, 505 Minh Khai, Hai Bà
+                                        Trưng, Hà
+                                        Nội
+                                    </p>
+                                </div>
+                            <li class="footer__item">
+                                <div class="footer-item__content">
+                                    <div class="footer-item-content__icon">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.4805 1.43358C13.6445 1.46092 13.7539 1.54295 13.8633 1.65233C13.9453 1.78905 14 1.92577 14 2.06248C14 4.35936 13.4258 6.49217 12.2774 8.46092C11.1289 10.375 9.62501 11.9062 7.71095 13.0273C5.7422 14.1758 3.60938 14.75 1.31251 14.75C1.14845 14.75 1.01173 14.7226 0.902353 14.6133C0.765634 14.5312 0.683603 14.3945 0.683603 14.2305L0.027353 11.3867C-0.0273345 11.25 9.29087e-06 11.1133 0.0820405 10.9492C0.136728 10.8125 0.246103 10.7031 0.410166 10.6484L3.47267 9.33592C3.58204 9.28123 3.71876 9.28123 3.88282 9.30858C4.01954 9.33592 4.12892 9.41795 4.23829 9.52733L5.57813 11.168C6.64454 10.6758 7.60157 10.0195 8.42188 9.17186C9.2422 8.35155 9.92579 7.39452 10.418 6.32811L8.77735 4.96092C8.66798 4.87889 8.58595 4.76952 8.5586 4.6328C8.50392 4.49608 8.53126 4.35936 8.58595 4.1953L9.89845 1.1328C9.95313 1.02342 10.0352 0.914047 10.1992 0.832016C10.3359 0.777329 10.4727 0.749985 10.6367 0.777329L13.4805 1.43358Z"
+                                                fill="#434343" />
+                                        </svg>
+                                    </div>
+                                    <p class="footer-item-content__title">
+                                        0981 30 8899
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="footer__item">
+                                <div class="footer-item__content">
+                                    <div class="footer-item-content__icon">
+                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.7266 3.97266C13.0703 4.49219 11.6484 5.53125 9.51562 7.0625L9.24219 7.28125C8.80469 7.60938 8.47656 7.85547 8.20312 7.99219C7.76562 8.26562 7.35547 8.375 7 8.375C6.61719 8.375 6.23438 8.26562 5.79688 8.01953C5.52344 7.88281 5.19531 7.63672 4.75781 7.30859L4.48438 7.0625C2.26953 5.47656 0.875 4.4375 0.273438 3.97266C0.21875 3.94531 0.136719 3.94531 0.0820312 3.97266C0.0273438 4 0 4.05469 0 4.10938V9.6875C0 10.0703 0.109375 10.3711 0.382812 10.6172C0.628906 10.8906 0.929688 11 1.3125 11H12.6875C13.043 11 13.3438 10.8906 13.6172 10.6172C13.8633 10.3711 14 10.0703 14 9.6875V4.10938C14 4.05469 13.9453 4 13.8906 3.94531C13.8359 3.91797 13.7812 3.91797 13.7266 3.97266ZM7 7.5C6.75391 7.5 6.45312 7.39062 6.125 7.17188C5.90625 7.0625 5.63281 6.87109 5.27734 6.57031L5.00391 6.37891C2.76172 4.73828 1.23047 3.61719 0.4375 2.98828L0.246094 2.85156C0.0820312 2.74219 0 2.55078 0 2.33203V1.8125C0 1.45703 0.109375 1.15625 0.382812 0.882812C0.628906 0.636719 0.929688 0.5 1.3125 0.5H12.6875C13.043 0.5 13.3438 0.636719 13.6172 0.882812C13.8633 1.15625 14 1.45703 14 1.8125V2.33203C14 2.55078 13.918 2.74219 13.7539 2.85156L13.6172 2.96094C12.8242 3.58984 11.293 4.73828 8.99609 6.37891L8.72266 6.57031C8.33984 6.87109 8.06641 7.0625 7.875 7.17188C7.51953 7.39062 7.21875 7.5 7 7.5Z"
+                                                fill="#434343" />
+                                        </svg>
+                                    </div>
+                                    <p class="footer-item-content__title">
+                                        info@dngvietnam.com
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer-heading-list">
+                            <h4 class="footer__heading-list-item">Về DNG</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#">Sơ lược công ty</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Sơ đồ tổ chức</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Tầm nhìn</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Sứ mệnh</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Giá trị cốt lõi</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Hoạt động</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer-heading-list">
+                            <h4 class="footer__heading-list-item">Dự án</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#">Chung cư</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Biệt thự</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Shop house</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Biệt thự biển</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Nhà liền kề</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer-heading-list">
+                            <h4 class="footer__heading-list-item">Tuyển dụng</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#">Triết lý nhân sự</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Chính sách tuyển dụng</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Quyền lợi</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Vị trí tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer-heading-list">
+                            <h4 class="footer__heading-list-item">Tin tức</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#">Sự kiện mở bán</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Hội thảo BĐS</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Ngày hội truyền thông</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Tin tức thị trường</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-2">
+                        <div class="footer-heading-list">
+                            <h4 class="footer__heading-list-item">Hoạt động</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#">Khảo sát thực tế</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Đào tạo</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Phân tích chuyên sâu</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Hoạt động giải trí</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__coppyright">
+                    Coyrights 2019. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
