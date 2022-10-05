@@ -323,7 +323,7 @@
     height: 44px;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 1;;
 }
 .selector:hover{
     cursor: pointer;
@@ -344,7 +344,6 @@
     color: var(--primary-color);
 }
 
-
 .selector__list{
     position: absolute;
     top: calc(100% + 2px);
@@ -359,6 +358,17 @@
     display: none;
     max-height: 200px;
     overflow: auto;
+    animation: scale ease .3s;
+    transform-origin: top center;
+}
+@keyframes scale{
+    0%{
+        transform: scaleY(0) ;
+        
+    }
+    100%{
+        transform: scaleY(1);
+    }
 }
 .selector-list__item{
     padding: 10px 0;
