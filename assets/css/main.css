@@ -157,14 +157,18 @@ html {
     background-color: var(--second-color);
     display: flex;
 }
-
+.header__close-icon,
 .header__search-icon,
 .header-navbar-phone__icon {
     margin: 8.75px auto;
     width: 14px;
     height: 14px;
 }
-
+.header__close-icon{
+    width: 26px;
+    height: 26px;
+    margin: auto;
+}
 .header-navbar-phone-number {
     color: var(--text-color);
     font-size: 1.4rem;
@@ -183,6 +187,13 @@ html {
 
 #checkbox__search:checked~.header__search {
     display: block;
+}
+
+#checkbox__search:checked ~ .header-navbar__search .header__close-icon{
+    display: block;
+}
+#checkbox__search:checked ~ .header-navbar__search .header__search-icon{
+    display: none;
 }
 
 .header__search {
