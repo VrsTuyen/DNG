@@ -14,12 +14,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
         <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="icon" href="./assets/img/dng-logo.ico">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <title>DNG</title>
 </head>
 
@@ -29,12 +31,17 @@
         <header class="header">
             <div class="grid wide">
                 <div class="row header__navbar ">
-                    <div class="col l-3 header-navbar-img__link">
+                    <div class="col l-3 m-12 s-12 header-navbar-img__link">
                         <a href="/" class="header-navbar-link">
                             <img src="./assets/img/dng-logo.png" alt="DNG Việt Nam">
                         </a>
+                        <div class="menu-mobile">
+                            <div class="menu-mobile__icon">
+                                <i class="fi fi-br-menu-burger"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col nav-bar full-height">
+                    <div class="col l-6 m-0 s-0 nav-bar full-height">
                         <ul class="header-navbar__list">
                             <li class="header-navbar__item header-navbar-item--active">
                                <a href="index.html" class="header-navbar__link">Về DNG</a>
@@ -97,7 +104,7 @@
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Liên hệ</a></li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-0 s-0">
                         <div class="search">
                             <a href="tel:335 08 15 08 90" class="phone__number">
                                 <div class="header-navbar__phone">
@@ -131,16 +138,21 @@
                             </label>
                         </div>
                     </div>
+                    
                 </div>
         </header>
         <!-- main -->
         <div class="main">
             <div class="slide"
-                style="background: linear-gradient(rgba(38,38,38,0.28), rgba(38,38,38,0.28)), url('./assets/img/03.png') top center / cover no-repeat">
+                style="background: 
+                linear-gradient(rgba(38,38,38,0.28), 
+                rgba(38,38,38,0.28)), 
+                url('./assets/img/03.png') 
+                top center / cover no-repeat">
                 <div class="grid wide full-height">
                     <div class="row full-height">
                         <div class="col l-3 content-left">
-                            <div class="navigation-button__left">
+                            <div class="navigation-button__left" onclick="slideBackground(-1)">
                                 <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -193,7 +205,7 @@
                             </div>
                         </div>
                         <div class="col l-3 content-right">
-                            <div class="navigation-button__right">
+                            <div class="navigation-button__right" onclick="slideBackground(+1)">
                                 <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -246,62 +258,243 @@
                                 <h2 class="h2-heading">
                                     Dự án triển khai
                                 </h2>
-                                <ul class="implemented-nav__list ">
+                                <ul class="implemented-nav__list implemented-project-1 ">
                                     <li class="implemented-nav__item implemented-nav-item--active">
-                                        <a href="" class="implemented-nav-item__link">Chung cư</a>
+                                        Chung cư
                                     </li>
                                     <li class="implemented-nav__item ">
-                                        <a href="" class="implemented-nav-item__link">Shop house</a>
+                                       Shop house
                                     </li>
                                     <li class="implemented-nav__item">
-                                        <a href="" class="implemented-nav-item__link">Biệt thự</a>
+                                       Biệt thự
                                     </li>
                                     <li class="implemented-nav__item">
-                                        <a href="" class="implemented-nav-item__link">Biệt thự biển</a>
+                                       Biệt thự biển
                                     </li>
                                     <li class="implemented-nav__item">
-                                        <a href="" class="implemented-nav-item__link">Nhà liền kề</a>
+                                       Nhà liền kề
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-12">
-                            <div class="row">
-                                <div class="col l-4">
+                        <div class="col l-12 implemented-project-1">
+                        <div class="implemented-project__content active">
+                            <div class="col l-12">
+                                <div class="row">
+                                <div class="col l-4 m-12 s-12">
                                     <div class="implemented-item">
                                         <img src="./assets/img/05.png"
                                             class="implemented-item-img implemented-item-img--has-border"></img>
                                         <div class="implemented-item-info implemented-item-bg-white">
+                                           <a href="#" class="implemented-item-info__link">
                                             <span>
                                                 Banyan Tree Villa Laguna Resort
                                             </span>
+                                           </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-4">
+                                <div class="col l-4 m-12 s-12">
                                     <div class="implemented-item">
                                         <img src="./assets/img/01.png"
                                             class="implemented-item-img implemented-item-img--has-border"></img>
                                         <div class="implemented-item-info implemented-item-bg-white">
+                                            <a href="#" class="implemented-item-info__link">
                                             <span>
                                                 Sun Premier Village Phú Quốc
                                             </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-4">
+                                <div class="col l-4 m-12 s-12">
                                     <div class="implemented-item">
                                         <img src="./assets/img/04.png"
                                             class="implemented-item-img implemented-item-img--has-border"></img>
                                         <div class="implemented-item-info implemented-item-bg-white">
+                                            <a href="#" class="implemented-item-info__link">
                                             <span>
                                                 Sun Premier Village Phú Quốc
-                                            </span>
+                                            </span></a>
                                         </div>
                                     </div>
                                 </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="implemented-project__content">
+                            <div class="col l-12">
+                            <div class="row">
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/01.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                       <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Banyan Tree Villa Laguna Resort
+                                        </span>
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/04.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/03.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div></div>
+                        <div class="implemented-project__content">
+                            <div class="col l-12">
+                            <div class="row">
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/07.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                       <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Banyan Tree Villa Laguna Resort
+                                        </span>
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/04.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/05.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div></div>
+                        <div class="implemented-project__content">
+                            <div class="col l-12">
+                            <div class="row">
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/11.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                       <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Banyan Tree Villa Laguna Resort
+                                        </span>
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/12.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/07.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div></div>
+                        <div class="implemented-project__content">
+                            
+                            <div class="row">
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/05.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                       <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Banyan Tree Villa Laguna Resort
+                                        </span>
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/01.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 s-12">
+                                <div class="implemented-item">
+                                    <img src="./assets/img/04.png"
+                                        class="implemented-item-img implemented-item-img--has-border"></img>
+                                    <div class="implemented-item-info implemented-item-bg-white">
+                                        <a href="#" class="implemented-item-info__link">
+                                        <span>
+                                            Sun Premier Village Phú Quốc
+                                        </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                         <button class="btn-show-more  implemented-item-bg-white">
                             <a href="#" class="btn-show-more__link">
                                 Xem thêm
@@ -324,56 +517,74 @@
                                 <h2 class="h2-heading">
                                     Dự án triển khai
                                 </h2>
-                                <ul class="implemented-nav__list">
+                                <ul class="implemented-nav__list  implemented-project-2">
                                     <li class="implemented-nav__item implemented-nav-item--active ">
-                                        <a href="" class="implemented-nav-item__link">Chung cư</a>
+                                        Chung cư
                                     </li>
                                     <li class="implemented-nav__item ">
-                                        <a href="" class="implemented-nav-item__link">Shop house</a>
+                                        Shop house
                                     </li>
                                     <li class="implemented-nav__item">
-                                        <a href="" class="implemented-nav-item__link">Biệt thự</a>
+                                        Biệt thự
                                     </li>
                                     <li class="implemented-nav__item">
-                                        <a href="" class="implemented-nav-item__link">Biệt thự biển</a>
+                                        Biệt thự biển
                                     </li>
                                     <li class="implemented-nav__item">
-                                        <a href="" class="implemented-nav-item__link">Nhà liền kề</a>
+                                        Nhà liền kề
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col l-12">
                             <div class="row">
-                                <div class="col l-4">
-                                    <div class="implemented-item bg-trans">
-                                        <img src="./assets/img/05.png" class="implemented-item-img"></img>
-                                        <div class="implemented-item-info implemented-item-bg-red">
-                                            <span>
-                                                Banyan Tree Villa Laguna Resort
-                                            </span>
+                                <div class="col l-12 implemented-project-2">
+                                    <div class="implemented-project__content active">
+                                        <div class="col l-12">
+                                            <div class="row">
+                                                <div class="col l-4 m-12 s-12">
+                                                    <div class="implemented-item bg-trans">
+                                                        <img src="./assets/img/05.png" class="implemented-item-img"></img>
+                                                        <div class="implemented-item-info implemented-item-bg-red">
+                                                        <a href="#" class="implemented-item-info__link implemented-item-bg-red">
+                                                            <span>
+                                                                Banyan Tree Villa Laguna Resort
+                                                            </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-4 m-12 s-12">
+                                                    <div class="implemented-item bg-trans">
+                                                        <img src="./assets/img/01.png" class="implemented-item-img"></img>
+                                                        <div class="implemented-item-info implemented-item-bg-red">
+                                                        <a href="#" class="implemented-item-info__link">
+                                                            <span>
+                                                                Sun Premier Village Phú Quốc
+                                                            </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-4 m-12 s-12">
+                                                    <div class="implemented-item bg-trans">
+                                                        <img src="./assets/img/04.png" class="implemented-item-img"></img>
+                                                        <div class="implemented-item-info implemented-item-bg-red">
+                                                        <a href="#" class="implemented-item-info__link">
+                                                            <span>
+                                                                Sun Premier Village Phú Quốc
+                                                            </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col l-4">
-                                    <div class="implemented-item bg-trans">
-                                        <img src="./assets/img/01.png" class="implemented-item-img"></img>
-                                        <div class="implemented-item-info implemented-item-bg-red">
-                                            <span>
-                                                Sun Premier Village Phú Quốc
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-4">
-                                    <div class="implemented-item bg-trans">
-                                        <img src="./assets/img/04.png" class="implemented-item-img"></img>
-                                        <div class="implemented-item-info implemented-item-bg-red">
-                                            <span>
-                                                Sun Premier Village Phú Quốc
-                                            </span>
-                                        </div>
-                                    </div>
+                                    <div class="implemented-project__content"></div>
+                                    <div class="implemented-project__content"></div>
+                                    <div class="implemented-project__content"></div>
+                                    <div class="implemented-project__content"></div>
                                 </div>
                             </div>
                         </div>
@@ -394,7 +605,7 @@
                 <div class="grid wide full-height">
                     <div class="row full-height">
                         <div class="col l-3 content-left">
-                            <div class="navigation-button__left">
+                            <div class="navigation-button__left" onclick="slideBackground2(-1)">
                                 <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -421,8 +632,8 @@
 
                             </div>
                         </div>
-                        <div class="col l-3 content-right">
-                            <div class="navigation-button__right">
+                        <div class="col l-3 content-right" >
+                            <div class="navigation-button__right" onclick="slideBackground2(1)">
                                 <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -458,43 +669,48 @@
                             </div>
                             <div class="col l-12">
                                 <div class="row about-content-container">
-                                    <div class="col l-6 about-content-left">
-                                        <div class="navigation-left">
-                                            <svg width="15" height="32" viewBox="0 0 15 32" fill="blacks"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M1.16757 14.6768L12.8821 1.40028C13.6199 0.564131 15 1.08596 15 2.20107C15 2.48639 14.8992 2.76253 14.7154 2.98076L4.83515 14.7116C4.2081 15.4561 4.2081 16.5439 4.83515 17.2884L14.7154 29.0192C14.8992 29.2375 15 29.5136 15 29.7989C15 30.914 13.6199 31.4359 12.8821 30.5997L1.16757 17.3232C0.500469 16.5672 0.500468 15.4328 1.16757 14.6768Z"
-                                                    fill="currentcolor" />
-                                            </svg>
-                                        </div>
-                                        <div class="about-img-container">
-                                            <img class="about-img-member" src="./assets/img/member.png"></img>
+                                    <div class="navigation-left" onclick="slideMember(-1)">
+                                        <svg width="15" height="32" viewBox="0 0 15 32" fill="blacks"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.16757 14.6768L12.8821 1.40028C13.6199 0.564131 15 1.08596 15 2.20107C15 2.48639 14.8992 2.76253 14.7154 2.98076L4.83515 14.7116C4.2081 15.4561 4.2081 16.5439 4.83515 17.2884L14.7154 29.0192C14.8992 29.2375 15 29.5136 15 29.7989C15 30.914 13.6199 31.4359 12.8821 30.5997L1.16757 17.3232C0.500469 16.5672 0.500468 15.4328 1.16757 14.6768Z"
+                                                fill="currentcolor" />
+                                        </svg>
+                                    </div>
+                                    <div class="about-us-implemented">
+                                        <div class="row">
+                                            <div class="col l-6 m-12 s-12 about-content-left"  >
+                                                <div class="about-img-container">
+                                                    <img class="about-img-member" src="./assets/img/member.png"></img>
+                                                </div>
+                                            </div>
+                                            <div class=" col l-6  m-12 s-12  about-content-right">
+                                                <div class="about-member">
+                                                    <h2 class="about-heading-member-name">
+                                                        John Fehily
+                                                    </h2>
+                                                    <h3 class="about-member__position">Director</h3>
+                                                    <p class="about-member__info">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                                                        amet
+                                                        dolore quae ab dignissimos blanditiis tenetur soluta tempore
+                                                        sunt,
+                                                        veniam sequi excepturi totam minima hic facere possimus atque,
+                                                        tempora
+                                                        nemo!
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class=" col l-6 about-content-right">
-                                        <div class="about-member">
-                                            <h2 class="about-heading-member-name">
-                                                John Fehily
-                                            </h2>
-                                            <h3 class="about-member__position">Director</h3>
-                                            <p class="about-member__info">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                                                amet
-                                                dolore quae ab dignissimos blanditiis tenetur soluta tempore
-                                                sunt,
-                                                veniam sequi excepturi totam minima hic facere possimus atque,
-                                                tempora
-                                                nemo!
-                                            </p>
-                                        </div>
-                                        <div class="navigation-right">
-                                            <svg width="15" height="32" viewBox="0 0 15 32" fill="blacks"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M1.16757 14.6768L12.8821 1.40028C13.6199 0.564131 15 1.08596 15 2.20107C15 2.48639 14.8992 2.76253 14.7154 2.98076L4.83515 14.7116C4.2081 15.4561 4.2081 16.5439 4.83515 17.2884L14.7154 29.0192C14.8992 29.2375 15 29.5136 15 29.7989C15 30.914 13.6199 31.4359 12.8821 30.5997L1.16757 17.3232C0.500469 16.5672 0.500468 15.4328 1.16757 14.6768Z"
-                                                    fill="currentcolor" />
-                                            </svg>
-                                        </div>
+                                    <div class="navigation-right" onclick="slideMember(+1)">
+                                        <svg width="15" height="32" viewBox="0 0 15 32" fill="blacks"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.16757 14.6768L12.8821 1.40028C13.6199 0.564131 15 1.08596 15 2.20107C15 2.48639 14.8992 2.76253 14.7154 2.98076L4.83515 14.7116C4.2081 15.4561 4.2081 16.5439 4.83515 17.2884L14.7154 29.0192C14.8992 29.2375 15 29.5136 15 29.7989C15 30.914 13.6199 31.4359 12.8821 30.5997L1.16757 17.3232C0.500469 16.5672 0.500468 15.4328 1.16757 14.6768Z"
+                                                fill="currentcolor" />
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -516,7 +732,7 @@
                         </div>
                         <div class="col l-12 recruit-container">
                             <div class="row">
-                                <div class="col l-4">
+                                <div class="col l-4 m-12 s-12">
                                     <div class="recruit-position" style="background: linear-gradient(rgba(38, 38, 38, 0.16), rgba(38, 38, 38, 0.16)),
                             url(./assets/img/section1_learn.png) center / cover no-repeat;">
                                         <h3 class="recruit-position__heading">Marketing</h3>
@@ -529,7 +745,7 @@
                                         <h2 class="recruit-quantity__heading">10 Người</h2>
                                     </a>
                                 </div>
-                                <div class="col l-4">
+                                <div class="col l-4 m-12 s-12">
                                     <div class="recruit-position" style="background: linear-gradient(rgba(38, 38, 38, 0.16), rgba(38, 38, 38, 0.16)),
                             url(./assets/img/section2_learn.png) center / cover no-repeat;">
                                         <h3 class="recruit-position__heading">Sale</h3>
@@ -542,7 +758,7 @@
                                         <h2 class="recruit-quantity__heading">10 Người</h2>
                                     </a>
                                 </div>
-                                <div class="col l-4">
+                                <div class="col l-4 m-12 s-12">
                                     <div class="recruit-position" style="background: linear-gradient(rgba(38, 38, 38, 0.16), rgba(38, 38, 38, 0.16)),
                             url(./assets/img/section1_learn.png) center / cover no-repeat;">
                                         <h3 class="recruit-position__heading">Marketing</h3>
@@ -568,7 +784,7 @@
                         </div>
                         <div class="col l-12">
                             <div class="row">
-                                <div class="col l-3">
+                                <div class="col l-3 m-6">
                                     <div class="welcome__container">
                                         <div class="welcome-container__item">
                                             <div class="welcome-item__icon">
@@ -618,7 +834,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-3">
+                                <div class="col l-3 m-6">
                                     <div class="welcome__container">
                                         <div class="welcome-container__item">
                                             <div class="welcome-item__icon">
@@ -656,7 +872,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-3">
+                                <div class="col l-3 m-6">
                                     <div class="welcome__container">
                                         <div class="welcome-container__item">
                                             <div class="welcome-item__icon">
@@ -695,7 +911,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-3">
+                                <div class="col l-3 m-6">
                                     <div class="welcome__container">
                                         <div class="welcome-container__item">
                                             <div class="welcome-item__icon">
@@ -823,7 +1039,7 @@
                             </div>
                             <div class="activities-news">
                                 <div class="row">
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-12 s-12 mobile__news">
                                         <a href="" class="news-content">
                                             <div class="overlay"></div>
                                             <img src="./assets/img/07.png" alt="">
@@ -855,7 +1071,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-12 s-12 mobile__news ">
                                         <a href="" class="news-content">
                                             <div class="overlay"></div>
                                             <img src="./assets/img/08.png" alt="">
@@ -887,7 +1103,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-12 s-12 mobile__news">
                                         <a href="" class="news-content">
                                             <div class="overlay"></div>
                                             <img src="./assets/img/09.png" alt="">
@@ -935,7 +1151,7 @@
                                     </a>
                                 </div>
                                 <div class="row">
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <a href="" class="activities-content__left">
                                             <div class="activities-content">
                                                 <h4 class="news-content-decription__title">
@@ -952,8 +1168,8 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col l-6">
-                                        <div class="row">
+                                    <div class="col l-6 activities-content-right">
+                                        <div class="row ">
                                             <div class="col l-12 activities-content-right__element">
                                                 <img src="./assets/img/10.png" alt=""
                                                     class="element-content-right__img">
@@ -1040,22 +1256,22 @@
             <div class="connect">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-3">
+                        <div class="col l-3 m-6 s-6">
                             <div class="connect__img">
                                 <a href=""><img src="./assets/img/14.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-6 s-6">
                             <div class="connect__img">
                                 <a href=""><img src="./assets/img/15-2.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-6 s-6">
                             <div class="connect__img">
                                 <a href=""><img src="./assets/img/16.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-6 s-6">
                             <div class="connect__img">
                                 <a href=""><img src="./assets/img/17.png" alt=""></a>
                             </div>
@@ -1067,7 +1283,7 @@
             <div class="footer">
                 <div class="grid wide">
                     <div class="row footer__separator">
-                        <div class="col l-2">
+                        <div class="col l-2 m-4 s-4">
                             <img src="./assets/img/dng-logo.png" alt="">
                             <ul class="footer__list">
                                 <li class="footer__item">
@@ -1118,7 +1334,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col l-2">
+                        <div class="col l-2 m-4 s-4">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Về DNG</h4>
                                 <ul class="footer__list">
@@ -1143,7 +1359,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2">
+                        <div class="col l-2 m-4 s-4">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Dự án</h4>
                                 <ul class="footer__list">
@@ -1165,7 +1381,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2">
+                        <div class="col l-2 m-4 s-4">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Tuyển dụng</h4>
                                 <ul class="footer__list">
@@ -1184,7 +1400,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2">
+                        <div class="col l-2  m-4">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Tin tức</h4>
                                 <ul class="footer__list">
@@ -1203,7 +1419,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2">
+                        <div class="col l-2  m-4">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Hoạt động</h4>
                                 <ul class="footer__list">
@@ -1229,6 +1445,45 @@
                 </div>
             </div>
         </div>
+        <div class="menu-overlay">
+            <div class="menu-overlay-body">
+                <div class="menu-mobile__search">
+                    <input type="text" class="menu-mobile__search-input" name="mobilesearch" placeholder="Tìm kiếm">
+                    <i class="fi fi-br-search"></i>
+                </div>
+                <div class="menu-mobile__nav">
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile-item">Giới thiệu</li>
+                        <li class="menu-mobile-item">Dự án
+                            <ul>
+                                <li class = "menu-mobile__sub-item">Chung cư</li>
+                                <li class = "menu-mobile__sub-item">Biệt thự</li>
+                                <li class = "menu-mobile__sub-item">Shop house</li>
+                                <li class = "menu-mobile__sub-item">Biệt thự biển</li>
+                                <li class = "menu-mobile__sub-item">Nhà liền kề</li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item">Tuyển dụng
+                            <ul>
+                                <li class = "menu-mobile__sub-item">Triết lý nhân sự</li>
+                                <li class = "menu-mobile__sub-item">Chính sách tuyển dụng</li>
+                                <li class = "menu-mobile__sub-item">Quyền lợi</li>
+                                <li class = "menu-mobile__sub-item">Vị trí tuyển dụng </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item">Tin tức</li>
+                        <li class="menu-mobile-item">Hoạt động</li>
+                        <li class="menu-mobile-item">Liên hệ
+                            <ul>
+                                <li><a href="tel:+335 08 15 08 90">335 08 15 08 90</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
         <script src="./assets/js/main.js"></script>
 </body>
 
