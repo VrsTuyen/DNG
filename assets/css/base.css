@@ -133,6 +133,7 @@
 
 .implemented-nav {
   display: flex;
+  justify-content: space-between;
   margin: 72px 0 48px;
 }
 

@@ -16,6 +16,7 @@
         rel="stylesheet">
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
         <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -31,7 +32,7 @@
         <header class="header">
             <div class="grid wide">
                 <div class="row header__navbar ">
-                    <div class="col l-3 m-12 s-12 header-navbar-img__link">
+                    <div class="col l-3 m-3 s-12 header-navbar-img__link">
                         <a href="/" class="header-navbar-link">
                             <img src="./assets/img/dng-logo.png" alt="DNG Việt Nam">
                         </a>
@@ -41,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-6 m-0 s-0 nav-bar full-height">
+                    <div class="col l-6 m-9 s-0 nav-bar full-height">
                         <ul class="header-navbar__list">
                             <li class="header-navbar__item header-navbar-item--active">
                                <a href="index.html" class="header-navbar__link">Về DNG</a>
@@ -1170,7 +1171,7 @@
                                     </div>
                                     <div class="col l-6 activities-content-right">
                                         <div class="row ">
-                                            <div class="col l-12 activities-content-right__element">
+                                            <a href="#" class="col l-12 activities-content-right__element">
                                                 <img src="./assets/img/10.png" alt=""
                                                     class="element-content-right__img">
                                                 <div class="element-content-decription">
@@ -1187,8 +1188,8 @@
                                                         <p class="element-decription-auth__name">By Admin</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col l-12 activities-content-right__element">
+                                            </a>
+                                            <a href="#" class="col l-12 activities-content-right__element">
                                                 <img src="./assets/img/11.png" alt=""
                                                     class="element-content-right__img">
                                                 <div class="element-content-decription">
@@ -1205,8 +1206,8 @@
                                                         <p class="element-decription-auth__name">By Admin</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col l-12 activities-content-right__element">
+                                            </a>
+                                            <a href="#" class="col l-12 activities-content-right__element">
                                                 <img src="./assets/img/12.png" alt=""
                                                     class="element-content-right__img">
                                                 <div class="element-content-decription">
@@ -1223,7 +1224,7 @@
                                                         <p class="element-decription-auth__name">By Admin</p>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1447,44 +1448,55 @@
         </div>
         <div class="menu-overlay">
             <div class="menu-overlay-body">
+                <div class="mobile-header">
+                    <div class="menu-mobile-close">
+                        <div class="menu-mobile__icon">
+                            <i class="fi fi-br-cross"></i>
+                        </div>
+                    </div>
+                </div>
                 <div class="menu-mobile__search">
                     <input type="text" class="menu-mobile__search-input" name="mobilesearch" placeholder="Tìm kiếm">
                     <i class="fi fi-br-search"></i>
                 </div>
                 <div class="menu-mobile__nav">
                     <ul class="menu-mobile__list">
-                        <li class="menu-mobile-item">Giới thiệu</li>
-                        <li class="menu-mobile-item">Dự án
-                            <ul>
-                                <li class = "menu-mobile__sub-item">Chung cư</li>
-                                <li class = "menu-mobile__sub-item">Biệt thự</li>
-                                <li class = "menu-mobile__sub-item">Shop house</li>
-                                <li class = "menu-mobile__sub-item">Biệt thự biển</li>
-                                <li class = "menu-mobile__sub-item">Nhà liền kề</li>
+                        <li class="menu-mobile-item"><a href="index.html">Giới thiệu</a></li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="project.html">Dự án</a>   
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Chung cư</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Shop house</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự biển</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Nhà liền kề</a> </li>
                             </ul>
                         </li>
-                        <li class="menu-mobile-item">Tuyển dụng
-                            <ul>
-                                <li class = "menu-mobile__sub-item">Triết lý nhân sự</li>
-                                <li class = "menu-mobile__sub-item">Chính sách tuyển dụng</li>
-                                <li class = "menu-mobile__sub-item">Quyền lợi</li>
-                                <li class = "menu-mobile__sub-item">Vị trí tuyển dụng </li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="recruit.html">Tuyển dụng</a>
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Triết lý nhân sự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Chính sách tuyển dụng</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Quyền lợi</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Vị trí tuyển dụng</a>  </li>
                             </ul>
                         </li>
-                        <li class="menu-mobile-item">Tin tức</li>
-                        <li class="menu-mobile-item">Hoạt động</li>
-                        <li class="menu-mobile-item">Liên hệ
-                            <ul>
-                                <li><a href="tel:+335 08 15 08 90">335 08 15 08 90</a></li>
-                            </ul>
+                        <li class="menu-mobile-item"><a href="news.html">Tin tức</a></li>
+                        <li class="menu-mobile-item"><a href="#">Hoạt động</a></li>
+                        <li class="menu-mobile-item">Liên hệ: <a href="tel:+335 08 15 08 90">335 08 15 08 90</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    
-        <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

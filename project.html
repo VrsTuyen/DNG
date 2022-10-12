@@ -9,64 +9,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="icon" href="./assets/img/dng-logo.ico">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+
     <title>Chi tiết dự án</title>
 </head>
 <body>
     <div id="main">
-        <!-- header -->
-        <header class="header">
+        <!-- header --><header class="header">
             <div class="grid wide">
                 <div class="row header__navbar ">
-                    <div class="col l-3 header-navbar-img__link">
+                    <div class="col l-3 m-3 s-12 header-navbar-img__link">
                         <a href="/" class="header-navbar-link">
                             <img src="./assets/img/dng-logo.png" alt="DNG Việt Nam">
                         </a>
+                        <div class="menu-mobile">
+                            <div class="menu-mobile__icon">
+                                <i class="fi fi-br-menu-burger"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col nav-bar full-height">
+                    <div class="col l-6 m-9 s-0 nav-bar full-height">
                         <ul class="header-navbar__list">
-                            <li class="header-navbar__item">
-                                <a href="index.html" class="header-navbar__link">Về DNG</a>
+                            <li class="header-navbar__item ">
+                               <a href="index.html" class="header-navbar__link">Về DNG</a>
                             </li>
                             <li class="header-navbar__item header-navbar-item--active">
-                                <a href="project.html" class="header-navbar__link">
+                                <a href="project.html" class="header-navbar__link ">
                                     Dự án</a>
-                                <div class="header-navbar__icon">
-                                    <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
-                                            fill="#808080" />
-                                    </svg>
-                                </div>
-                                <ul class="header-navbar__sub-menu">
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Chung cư</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Biệt thự</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Shop house</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Biệt thự biển</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Nhà liền kề</a>
-                                    </li>
-                                </ul>
+                                    <div class="header-navbar__icon">
+                                        <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
+                                                fill="#808080" />
+                                        </svg>
+                                    </div>
+                                    <ul class="header-navbar__sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Chung cư</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Biệt thự</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Shop house</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Biệt thự biển</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Nhà liền kề</a>
+                                        </li>
+                                    </ul>
                             </li>
                             <li class="header-navbar__item">
                                 <a href="recruit.html" class="header-navbar__link">Tuyển dụng</a>
@@ -92,13 +99,12 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header-navbar__item"><a href="news.html" class="header-navbar__link">Tin tức</a>
-                            </li>
+                            <li class="header-navbar__item"><a href="news.html" class="header-navbar__link">Tin tức</a></li>
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Hoạt động</a></li>
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Liên hệ</a></li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-0 s-0">
                         <div class="search">
                             <a href="tel:335 08 15 08 90" class="phone__number">
                                 <div class="header-navbar__phone">
@@ -132,6 +138,7 @@
                             </label>
                         </div>
                     </div>
+                    
                 </div>
         </header>
 
@@ -171,31 +178,32 @@
             <div class="implemented bg1 overview-project">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-12">
+                        <div class="col l-12 m-12 s-12">
                             <div class="implemented-nav white-color">
                                 <h2 class="h2-heading">
                                     Dự án triển khai
                                 </h2>
                                 <ul class="implemented-nav__list ">
                                     <li class="implemented-nav__item implemented-nav-item--active">
-                                        <a href="" class="implemented-nav-item__link">Quy mô dự án</a>
+                                        <a class="implemented-nav-item__link">Quy mô dự án</a>
                                     </li>
                                     <li class="implemented-nav__item ">
-                                        <a href="" class="implemented-nav-item__link">5 lý do mua dự án</a>
+                                        <a  class="implemented-nav-item__link">5 lý do mua dự án</a>
                                     </li>
                                     <li class="implemented-nav__item">
-                                        <a href="" class="implemented-nav-item__link">Chương trình đặc
+                                        <a class="implemented-nav-item__link">Chương trình đặc
                                             biệt</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-12">
+                        <div class="col l-12 m-12 s-12">
+                            <div class="implemented-project__content active">
                             <div class="row">
-                                <div class="col l6">
+                                <div class="col l-6 m-12 s-12">
                                     <img src="./assets/img/18.png" alt="" class="content-img-left">
                                 </div>
-                                <div class="col l6">
+                                <div class="col l-6 m-12 s-12">
                                     <div class="overview-project-content">
                                         <h2 class="overview-project__heading">
                                             Vị trí, quy mô dự án
@@ -217,6 +225,63 @@
                                     </div>
                                 </div>
                             </div>
+                            </div>
+                            <div class="implemented-project__content">
+                                <div class="row">
+                                    <div class="col l-6 m-12 s-12">
+                                        <img src="./assets/img/19.png" alt="" class="content-img-left">
+                                    </div>
+                                    <div class="col l-6 m-12 s-12">
+                                        <div class="overview-project-content">
+                                            <h2 class="overview-project__heading">
+                                                Vị trí, quy mô dự án
+                                            </h2>
+                                            <ul class="overview-project__list">
+                                                <li class="overview-project__item">Là mảnh đất sinh thành ra cụ
+                                                    Chu Văn An, thờ vị tướng dân tộc Phạm Tu</li>
+                                                <li class="overview-project__item">Mảnh đất vàng còn sót lại
+                                                    cuối cùng ở Hà Nội với diện tích 100Ha</li>
+                                                <li class="overview-project__item">Chạy dọc tuyến đường vành đai
+                                                    3 cách đại học Thăng Long 100m</li>
+                                                <li class="overview-project__item">Phía Bắc là đại lộ
+                                                    NguyễnXuyến , phía Nam là công viên Chu Văn An</li>
+                                                <li class="overview-project__item">Tiếp giáp các dự án Eco Green
+                                                    City, Five Stars Kim Giang, VP6 Linh Đàm</li>
+                                                <li class="overview-project__item">Giảm giá trực tiếp khi đóng
+                                                    70% giá trị căn hộ</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="implemented-project__content">
+                                <div class="row">
+                                    <div class="col l-6 m-12 s-12">
+                                        <img src="./assets/img/20.png" alt="" class="content-img-left">
+                                    </div>
+                                    <div class="col l-6 m-12 s-12">
+                                        <div class="overview-project-content">
+                                            <h2 class="overview-project__heading">
+                                                Vị trí, quy mô dự án
+                                            </h2>
+                                            <ul class="overview-project__list">
+                                                <li class="overview-project__item">Là mảnh đất sinh thành ra cụ
+                                                    Chu Văn An, thờ vị tướng dân tộc Phạm Tu</li>
+                                                <li class="overview-project__item">Mảnh đất vàng còn sót lại
+                                                    cuối cùng ở Hà Nội với diện tích 100Ha</li>
+                                                <li class="overview-project__item">Chạy dọc tuyến đường vành đai
+                                                    3 cách đại học Thăng Long 100m</li>
+                                                <li class="overview-project__item">Phía Bắc là đại lộ
+                                                    NguyễnXuyến , phía Nam là công viên Chu Văn An</li>
+                                                <li class="overview-project__item">Tiếp giáp các dự án Eco Green
+                                                    City, Five Stars Kim Giang, VP6 Linh Đàm</li>
+                                                <li class="overview-project__item">Giảm giá trực tiếp khi đóng
+                                                    70% giá trị căn hộ</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -224,36 +289,36 @@
             <div class="project__image swirl-pattern ">
                 <div class="grid wide">
                     <div class="row project-image__container">
-                        <div class="col l-12">
+                        <div class="col l-12 m-12 s-12">
                             <div class="project-image__heading black-color">
                                 <h2 class="h2-heading">Hình ảnh dự án</h2>
                             </div>
                             <div class="row project-image">
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/32.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/31.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/30.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/27.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/25.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/24.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/20.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/19.png" alt="" class="project-image__img">
                                 </div>
-                                <div class="col l-4 project-image__item">
+                                <div class="col l-4 m-6 s-12 project-image__item">
                                     <img src="./assets/img/21.png" alt="" class="project-image__img">
                                 </div>
                             </div>
@@ -264,7 +329,7 @@
             <div class="project-idea">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-6 project-idea__design">
+                        <div class="col l-6 m-12 s-12 project-idea__design">
                             <h2 class="project-idea-design__title">Ý tưởng thiết kế</h2>
                             <p class="project-idea-design__sub-title">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -272,7 +337,7 @@
                                 doloribus sequi veniam libero similique odio molestias dolores,
                                 repudiandae unde voluptatum aliquid molestiae nobis?</p>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12 s-12">
                             <div class="project-idea__container-img">
                                 <img src="./assets/img/23.png" alt="">
                                 <div class="project-idea__label">
@@ -286,10 +351,10 @@
             <div class="ground-project">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-6">
+                        <div class="col l-6 m-0 s-0">
                             <img alt="" src="./assets/img/27.png" class="ground-project__img"></img>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12 s-12">
                             <div class="ground-project__content">
                                 <h2 class="project-idea-design__title">Mặt bằng dự án</h2>
                                 <ul class="ground-project__list">
@@ -338,7 +403,7 @@
             <div class="project__video">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-6 project-video__container">
+                        <div class="col l-6 m-12 s-12 project-video__container">
                             <h2 class="project-video__title">Video</h2>
                             <p class="project-video__decription">Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit.
@@ -348,7 +413,7 @@
                                 In vel orci lorem.
                                 Suspendisse hendrerit sem nec tincidunt molestie.</p>
                         </div>
-                        <div class="col l-6">
+                        <div class="col l-6 m-12 s-12">
                             <div class="project-video-item">
                                 <button>
                                     <svg width="67" height="67" viewBox="0 0 67 67" fill="none"
@@ -533,7 +598,57 @@
                 </div>
             </div>
         </div>
+        <div class="menu-overlay">
+            <div class="menu-overlay-body">
+                <div class="mobile-header">
+                    <div class="menu-mobile-close">
+                        <div class="menu-mobile__icon">
+                            <i class="fi fi-br-cross"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mobile__search">
+                    <input type="text" class="menu-mobile__search-input" name="mobilesearch" placeholder="Tìm kiếm">
+                    <i class="fi fi-br-search"></i>
+                </div>
+                <div class="menu-mobile__nav">
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile-item"><a href="index.html">Giới thiệu</a></li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="project.html">Dự án</a>   
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Chung cư</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Shop house</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự biển</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Nhà liền kề</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="recruit.html">Tuyển dụng</a>
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Triết lý nhân sự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Chính sách tuyển dụng</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Quyền lợi</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Vị trí tuyển dụng</a>  </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item"><a href="news.html">Tin tức</a></li>
+                        <li class="menu-mobile-item"><a href="#">Hoạt động</a></li>
+                        <li class="menu-mobile-item">Liên hệ: <a href="tel:+335 08 15 08 90">335 08 15 08 90</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

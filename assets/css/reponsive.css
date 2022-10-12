@@ -1,12 +1,18 @@
 /* >= Tablet */
 @media (min-width: 740px) {
-  .about-content-right {
-    border-right: 1px solid var(--third-color);
-  }
 }
 
 /* mobile */
 @media (max-width: 739px) {
+  .header-navbar-link {
+    margin-left: 16px;
+  }
+  .header-navbar-img__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .content-heading__text {
     font-size: 4.6rem;
   }
@@ -25,6 +31,9 @@
   .activities-content-right__element {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-right: 0;
   }
   .news-content-decription {
     width: 100%;
@@ -44,9 +53,6 @@
   .news-content img {
     width: 100%;
   }
-  .activities-content-right__element {
-    margin-left: 0;
-  }
   .about-content-container {
     position: relative;
   }
@@ -64,6 +70,33 @@
     left: 10%;
     z-index: 1;
   }
+  .menu-mobile {
+    display: block;
+  }
+  .project-image__item {
+    padding: 10px 16px;
+  }
+  .more-info {
+    padding: 16px;
+  }
+  .overview-project__heading {
+    margin-left: 0;
+  }
+  .overview-project-content {
+    padding-left: 32px;
+    padding-right: 16px;
+  }
+  .project-image__item img {
+    width: 100%;
+    max-width: unset;
+  }
+  .project-idea-design__sub-title {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  .project-idea-design__title {
+    text-align: center;
+  }
 }
 
 /* mobile, tablet */
@@ -77,6 +110,9 @@
   }
   .implemented-nav {
     flex-direction: column;
+  }
+  .h2-heading {
+    text-align: center;
   }
   .h2-heading::after {
     width: 0;
@@ -105,6 +141,36 @@
   }
   .working-space {
     height: auto;
+  }
+  .about-content-right {
+    border-right: 1px solid var(--third-color);
+  }
+  .project-idea {
+    padding: 32px 16px 60px;
+  }
+  .project__video {
+    padding: 60px 16px 72px;
+  }
+  .project-idea__container-img img,
+  .project-video-item,
+  .ground-project__img,
+  .content-img-left {
+    width: 100%;
+  }
+  .content-img-left {
+    padding: 0 16px;
+  }
+  .project-image__img {
+    width: 100%;
+  }
+  .ground-project__item {
+    max-width: unset;
+  }
+  .project-video__decription {
+    margin-right: 16px;
+  }
+  .project-video-item {
+    max-width: unset;
   }
 }
 /* Tablet - PC low resolution */
@@ -151,6 +217,14 @@
   }
   .activities-content__left {
     max-height: 482px;
+  }
+  .ground-project__item {
+    max-width: unset;
+  }
+  .ground-project__link {
+  }
+  .project-idea-design__img {
+    margin: 8px 10px 8px;
   }
 }
 

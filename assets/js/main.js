@@ -7,35 +7,40 @@ const contents = $$('.implemented-project-1 .implemented-project__content')
 const tabsImplemented2 = $$('.implemented-project-2 .implemented-nav__item')
 const contents2 = $$('.implemented-project-2 .implemented-project__content')
 
-tabsImplemented1.forEach(function (tab, index) {
-  const content = contents[index]
-  tab.onclick = function () {
-    $(
-      '.implemented-project-1 .implemented-nav__item.implemented-nav-item--active'
-    ).classList.remove('implemented-nav-item--active')
-    $(
-      '.implemented-project-1 .implemented-project__content.active'
-    ).classList.remove('active')
+var tab = function (tabElement, contents, selector1, seletor2, active) {
+  tabElement.forEach(function (tab, index) {
+    const content = contents[index]
+    tab.onclick = function () {
+      $(selector1).classList.remove(active)
+      $(seletor2).classList.remove('active')
 
-    content.classList.add('active')
-    this.classList.add('implemented-nav-item--active')
-  }
-})
+      content.classList.add('active')
+      this.classList.add(active)
+    }
+  })
+}
 
-tabsImplemented2.forEach(function (tab, index) {
-  const content = contents2[index]
-  tab.onclick = function () {
-    $(
-      '.implemented-project-2 .implemented-nav__item.implemented-nav-item--active'
-    ).classList.remove('implemented-nav-item--active')
-    $(
-      '.implemented-project-2 .implemented-project__content.active'
-    ).classList.remove('active')
-
-    content.classList.add('active')
-    this.classList.add('implemented-nav-item--active')
-  }
-})
+tab(
+  tabsImplemented1,
+  contents,
+  '.implemented-project-1 .implemented-nav__item.implemented-nav-item--active',
+  '.implemented-project-1 .implemented-project__content.active',
+  'implemented-nav-item--active'
+)
+tab(
+  $$('.overview-project .implemented-nav__item'),
+  $$('.overview-project .implemented-project__content'),
+  '.overview-project .implemented-nav__item.implemented-nav-item--active',
+  '.overview-project .implemented-project__content.active',
+  'implemented-nav-item--active'
+)
+tab(
+  tabsImplemented2,
+  contents2,
+  '.implemented-project-2 .implemented-nav__item.implemented-nav-item--active',
+  '.implemented-project-2 .implemented-project__content.active',
+  'implemented-nav-item--active'
+)
 
 var slideIndex = 0
 var memberIndex = 0
@@ -133,4 +138,47 @@ function slideBackground2(index) {
     '.working-space-nav .derection-button.derection-button--active'
   ).classList.remove('derection-button--active')
   derectionButton[slideIndex].classList.add('derection-button--active')
+}
+
+menuMobile()
+var isOpened = false
+
+function menuMobile() {
+  var menuOpen = $('.menu-mobile')
+  var menuClose = $('.menu-mobile-close')
+  var overLay = $('.menu-overlay')
+  menuOpen.onclick = function () {
+    if (!isOpened) {
+      isOpened = true
+      overLay.style.display = 'block'
+    }
+  }
+  menuClose.onclick = function () {
+    isOpened = false
+    overLay.style.display = 'none'
+  }
+}
+submenuMobile()
+
+function submenuMobile() {
+  var isOpened = false
+  var submenuItemIcon = $$('.menu-mobile-item i')
+  var submenuItem = $$('.menu-mobile-sub')
+  var icons = $$('.menu-mobile-item i')
+  submenuItemIcon.forEach(function (item, index) {
+    item.onclick = function () {
+      if ($('.menu-mobile-sub.active') != null) {
+        $('.menu-mobile-sub.active').classList.remove('active')
+      }
+      if (isOpened) {
+        isOpened = false
+        icons[index].style.transform = 'rotate(0deg)'
+      } else {
+        isOpened = true
+        submenuItem[index].classList.add('active')
+        icons[index].style.transform = 'rotate(180deg)'
+      }
+      console.log(isOpened)
+    }
+  })
 }
