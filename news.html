@@ -10,17 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="icon" href="./assets/img/dng-logo.ico">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <title>DNG</title>
 </head>
 
@@ -30,46 +32,51 @@
         <header class="header">
             <div class="grid wide">
                 <div class="row header__navbar ">
-                    <div class="col l-3 header-navbar-img__link">
+                    <div class="col l-3 m-3 s-12 header-navbar-img__link">
                         <a href="/" class="header-navbar-link">
                             <img src="./assets/img/dng-logo.png" alt="DNG Việt Nam">
                         </a>
+                        <div class="menu-mobile">
+                            <div class="menu-mobile__icon">
+                                <i class="fi fi-br-menu-burger"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col nav-bar full-height">
+                    <div class="col l-6 m-9 s-0 nav-bar full-height">
                         <ul class="header-navbar__list">
                             <li class="header-navbar__item">
-                                <a href="index.html" class="header-navbar__link">Về DNG</a>
+                               <a href="index.html" class="header-navbar__link">Về DNG</a>
                             </li>
                             <li class="header-navbar__item">
                                 <a href="project.html" class="header-navbar__link">
                                     Dự án</a>
-                                <div class="header-navbar__icon">
-                                    <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
-                                            fill="#808080" />
-                                    </svg>
-                                </div>
-                                <ul class="header-navbar__sub-menu">
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Chung cư</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Biệt thự</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Shop house</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Biệt thự biển</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Nhà liền kề</a>
-                                    </li>
-                                </ul>
+                                    <div class="header-navbar__icon">
+                                        <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
+                                                fill="#808080" />
+                                        </svg>
+                                    </div>
+                                    <ul class="header-navbar__sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Chung cư</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Biệt thự</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Shop house</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Biệt thự biển</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Nhà liền kề</a>
+                                        </li>
+                                    </ul>
                             </li>
-                            <li class="header-navbar__item">
+                            <li class="header-navbar__item ">
                                 <a href="recruit.html" class="header-navbar__link">Tuyển dụng</a>
                                 <div class="header-navbar__icon">
                                     <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
@@ -93,8 +100,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header-navbar__item header-navbar-item--active"><a href="news.html" class="header-navbar__link">Tin tức</a>
-                            </li>
+                            <li class="header-navbar__item header-navbar-item--active"><a href="news.html" class="header-navbar__link">Tin tức</a></li>
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Hoạt động</a></li>
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Liên hệ</a></li>
                         </ul>
@@ -133,6 +139,7 @@
                             </label>
                         </div>
                     </div>
+                    
                 </div>
         </header>
         <!-- main -->
@@ -144,7 +151,7 @@
                 rgba(58, 58, 57, 0)),
                 url(./assets/img/image.png) 
                 top center / cover no-repeat;">
-                    <div class="slide-img-button__left">
+                    <div class="slide-img-button__left" onclick="slideImg(-1, background4)">
                         <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -164,7 +171,7 @@
                             <div class="derection-button"></div>
                         </div>
                     </div>
-                    <div class="slide-img-button__right">
+                    <div class="slide-img-button__right" onclick="slideImg(1,background4)">
                         <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -176,192 +183,209 @@
             </div>
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-12">
+                    <div class="col l-12 m-12 s-12">
                         <div class="activate-news-content">
                             <div class="news-content__heading">
                                 <ul class="news-content-heading__nav">
-                                    <li class="new-content-heading__item new-content-heading__item--active">
+                                    <li class="news-content-heading__item news-content-heading__item--active">
                                         Tất cả</li>
-                                    <li class="new-content-heading__item ">Đào tạo chuyên môn</li>
-                                    <li class="new-content-heading__item ">Khảo sát dự án</li>
-                                    <li class="new-content-heading__item ">Hoạt động giải trí</li>
+                                    <li class="news-content-heading__item ">Đào tạo chuyên môn</li>
+                                    <li class="news-content-heading__item ">Khảo sát dự án</li>
+                                    <li class="news-content-heading__item ">Hoạt động giải trí</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col l-12 activate-search__container">
-                        <div class="activate__search">
-                            <label for="activate-search__input" class="activate-input-search__icon">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.9062 15.0625C15.9688 15.125 16 15.2188 16 15.3125C16 15.4375 15.9688 15.5312 15.9062 15.5938L15.5938 15.875C15.5 15.9688 15.4062 16 15.3125 16C15.1875 16 15.125 15.9688 15.0625 15.875L11.0312 11.8438C10.9375 11.7812 10.9062 11.7188 10.9062 11.5938V11.2812C10.3125 11.8438 9.625 12.25 8.875 12.5625C8.125 12.875 7.3125 13 6.5 13C5.3125 13 4.21875 12.7188 3.21875 12.125C2.21875 11.5625 1.4375 10.7812 0.875 9.78125C0.28125 8.78125 0 7.6875 0 6.5C0 5.3125 0.28125 4.25 0.875 3.25C1.4375 2.25 2.21875 1.46875 3.21875 0.875C4.21875 0.3125 5.3125 0 6.5 0C7.6875 0 8.75 0.3125 9.75 0.875C10.75 1.46875 11.5312 2.25 12.125 3.25C12.6875 4.25 13 5.3125 13 6.5C13 7.34375 12.8438 8.15625 12.5312 8.90625C12.2188 9.65625 11.8125 10.3438 11.2812 10.9062H11.5938C11.6875 10.9062 11.7812 10.9688 11.875 11.0312L15.9062 15.0625ZM6.5 12C7.5 12 8.40625 11.7812 9.25 11.2812C10.0938 10.7812 10.75 10.125 11.25 9.28125C11.75 8.4375 12 7.5 12 6.5C12 5.5 11.75 4.59375 11.25 3.75C10.75 2.90625 10.0938 2.25 9.25 1.75C8.40625 1.25 7.5 1 6.5 1C5.5 1 4.5625 1.25 3.71875 1.75C2.875 2.25 2.21875 2.90625 1.71875 3.75C1.21875 4.59375 1 5.5 1 6.5C1 7.5 1.21875 8.4375 1.71875 9.28125C2.21875 10.125 2.875 10.7812 3.71875 11.2812C4.5625 11.7812 5.5 12 6.5 12Z"
-                                        fill="#A40000"/>
-                                </svg>
-                            </label>
-                            <input type="text" placeholder="Tìm kiếm tin tức" id="activate-search__input" class="activate-search__input">
-                        </div>
-                        <div class="activate__selection">
-                            <div class="selector">
-                                <div class="selector__heading">Mới nhất</div>
-                                <div class="selector__icon">
-                                    <i class="fi fi-sr-sort-down"></i>
+                    <div class="col l-12 m-12 s-12">
+                        <div class="row activate-search__container">
+                            <div class="col l-6 m-12 s-12">
+                                <div class="activate__search">
+                                    <label for="activate-search__input" class="activate-input-search__icon">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.9062 15.0625C15.9688 15.125 16 15.2188 16 15.3125C16 15.4375 15.9688 15.5312 15.9062 15.5938L15.5938 15.875C15.5 15.9688 15.4062 16 15.3125 16C15.1875 16 15.125 15.9688 15.0625 15.875L11.0312 11.8438C10.9375 11.7812 10.9062 11.7188 10.9062 11.5938V11.2812C10.3125 11.8438 9.625 12.25 8.875 12.5625C8.125 12.875 7.3125 13 6.5 13C5.3125 13 4.21875 12.7188 3.21875 12.125C2.21875 11.5625 1.4375 10.7812 0.875 9.78125C0.28125 8.78125 0 7.6875 0 6.5C0 5.3125 0.28125 4.25 0.875 3.25C1.4375 2.25 2.21875 1.46875 3.21875 0.875C4.21875 0.3125 5.3125 0 6.5 0C7.6875 0 8.75 0.3125 9.75 0.875C10.75 1.46875 11.5312 2.25 12.125 3.25C12.6875 4.25 13 5.3125 13 6.5C13 7.34375 12.8438 8.15625 12.5312 8.90625C12.2188 9.65625 11.8125 10.3438 11.2812 10.9062H11.5938C11.6875 10.9062 11.7812 10.9688 11.875 11.0312L15.9062 15.0625ZM6.5 12C7.5 12 8.40625 11.7812 9.25 11.2812C10.0938 10.7812 10.75 10.125 11.25 9.28125C11.75 8.4375 12 7.5 12 6.5C12 5.5 11.75 4.59375 11.25 3.75C10.75 2.90625 10.0938 2.25 9.25 1.75C8.40625 1.25 7.5 1 6.5 1C5.5 1 4.5625 1.25 3.71875 1.75C2.875 2.25 2.21875 2.90625 1.71875 3.75C1.21875 4.59375 1 5.5 1 6.5C1 7.5 1.21875 8.4375 1.71875 9.28125C2.21875 10.125 2.875 10.7812 3.71875 11.2812C4.5625 11.7812 5.5 12 6.5 12Z"
+                                                fill="#A40000"/>
+                                        </svg>
+                                    </label>
+                                    <input type="text" placeholder="Tìm kiếm tin tức" id="activate-search__input" class="activate-search__input">
                                 </div>
-                                <ul class="selector__list">
-                                    <li class="selector-list__item">Mới nhất</li>
-                                    <li class="selector-list__item">Cũ nhất</li>
-                                </ul>
                             </div>
-                            <div class="selector">
-                                <div class="selector__heading">Tất cả</div>
-                                <div class="selector__icon">
-                                    <i class="fi fi-sr-sort-down"></i>
+                            <div class="col l-6 m-12 s-12 ">
+                                <div class="activate__selection">
+                                    <div class="selector">
+                                        <div class="selector__heading">Mới nhất</div>
+                                        <div class="selector__icon">
+                                            <i class="fi fi-sr-sort-down"></i>
+                                        </div>
+                                        <ul class="selector__list">
+                                            <li class="selector-list__item">Mới nhất</li>
+                                            <li class="selector-list__item">Cũ nhất</li>
+                                        </ul>
+                                    </div>
+                                    <div class="selector">
+                                        <div class="selector__heading">Tất cả</div>
+                                        <div class="selector__icon">
+                                            <i class="fi fi-sr-sort-down"></i>
+                                        </div>
+                                        <ul class="selector__list">
+                                            <li class="selector-list__item">Theo danh mục</li>
+                                            <li class="selector-list__item">Theo danh mục</li>
+                                        </ul>
+                                    </div>
+                                    <div class="selector selector__quantity">
+                                        <div class="selector__heading">Số tin hiển thị</div>
+                                        <span>
+                                            12
+                                        </span>
+                                        <div class="selector__icon">
+                                            <i class="fi fi-sr-sort-down"></i>
+                                        </div>
+                                        <ul class="selector__list">
+                                            <li class="selector-list__item">12</li>
+                                            <li class="selector-list__item">14</li>
+                                            <li class="selector-list__item">28</li>
+                                            <li class="selector-list__item">22</li>
+                                            <li class="selector-list__item">26</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <ul class="selector__list">
-                                    <li class="selector-list__item">Theo danh mục</li>
-                                    <li class="selector-list__item">Theo danh mục</li>
-                                </ul>
-                            </div>
-                            <div class="selector selector__quantity">
-                                <div class="selector__heading">Số tin hiển thị</div>
-                                <span>
-                                    12
-                                </span>
-                                <div class="selector__icon">
-                                    <i class="fi fi-sr-sort-down"></i>
-                                </div>
-                                <ul class="selector__list">
-                                    <li class="selector-list__item">12</li>
-                                    <li class="selector-list__item">14</li>
-                                    <li class="selector-list__item">28</li>
-                                    <li class="selector-list__item">22</li>
-                                    <li class="selector-list__item">26</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col l-12">
                         <div class="row">
-                            <div class="col l-8">
-                                <div class="row">
-                                    <a href="#" class="news-content__item">
-                                        <img class="news-content-item__img" src="./assets/img/05.png" alt="" >
-                                        <div class="news-content-item__decription">
-                                            <h3 class="news-content-item-decription__title">
-                                                Người cao tuổi mong ước gì về không gian sống?
-                                            </h3>
-                                            <p class="news-content-item-decription__sub-title">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
-                                            </p>
-                                        </div>
-                                         <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                        <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="news-content__item">
-                                        <img class="news-content-item__img" src="./assets/img/01.png" alt="" >
-                                        <div class="news-content-item__decription">
-                                            <h3 class="news-content-item-decription__title">
-                                                Người cao tuổi mong ước gì về không gian sống?
-                                            </h3>
-                                            <p class="news-content-item-decription__sub-title">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
-                                            </p>
-                                        </div>
-                                         <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                        
-                                    </a>
-                                    <a href="#" class="news-content__item">
-                                        <img class="news-content-item__img" src="./assets/img/04.png" alt="" >
-                                        <div class="news-content-item__decription">
-                                            <h3 class="news-content-item-decription__title">
-                                                Người cao tuổi mong ước gì về không gian sống?
-                                            </h3>
-                                            <p class="news-content-item-decription__sub-title">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
-                                            </p>
-                                        </div>
-                                         <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="news-content__item">
-                                        <img class="news-content-item__img" src="./assets/img/10.png" alt="" >
-                                        <div class="news-content-item__decription">
-                                            <h3 class="news-content-item-decription__title">
-                                                Người cao tuổi mong ước gì về không gian sống?
-                                            </h3>
-                                            <p class="news-content-item-decription__sub-title">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
-                                            </p>
-                                        </div>
-                                         <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="news-content__item">
-                                        <img class="news-content-item__img" src="./assets/img/11.png" alt="" >
-                                        <div class="news-content-item__decription">
-                                            <h3 class="news-content-item-decription__title">
-                                                Người cao tuổi mong ước gì về không gian sống?
-                                            </h3>
-                                            <p class="news-content-item-decription__sub-title">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
-                                            </p>
-                                        </div>
-                                         <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="news-content__item">
-                                        <img class="news-content-item__img" src="./assets/img/12.png" alt="" >
-                                        <div class="news-content-item__decription">
-                                            <h3 class="news-content-item-decription__title">
-                                                Người cao tuổi mong ước gì về không gian sống?
-                                            </h3>
-                                            <p class="news-content-item-decription__sub-title">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
-                                            </p>
-                                        </div>
-                                         <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="news-content__item">
-                                        <img class="news-content-item__img" src="./assets/img/24.png" alt="" >
-                                        <div class="news-content-item__decription">
-                                            <h3 class="news-content-item-decription__title">
-                                                Người cao tuổi mong ước gì về không gian sống?
-                                            </h3>
-                                            <p class="news-content-item-decription__sub-title">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
-                                            </p>
-                                        </div>
-                                         <div class="news-content__label">
-                                            <div class="news-content-label__numb">26</div>
-                                            <p class="news-content-label__month">Jan</p>
-                                        </div>
-                                    </a>
+                            <div class="col l-8 m-12 s-12">
+                                <div class="implemented-project__content active">
+                                    <div class="row page active">
+                                        <a href="#" class="news-content__item">
+                                            <img class="news-content-item__img" src="./assets/img/05.png" alt="" >
+                                            <div class="news-content-item__decription">
+                                                <h3 class="news-content-item-decription__title">
+                                                    Người cao tuổi mong ước gì về không gian sống?
+                                                </h3>
+                                                <p class="news-content-item-decription__sub-title">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                    Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
+                                                </p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="news-content__item">
+                                            <img class="news-content-item__img" src="./assets/img/01.png" alt="" >
+                                            <div class="news-content-item__decription">
+                                                <h3 class="news-content-item-decription__title">
+                                                    Người cao tuổi mong ước gì về không gian sống?
+                                                </h3>
+                                                <p class="news-content-item-decription__sub-title">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                    Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
+                                                </p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                            
+                                        </a>
+                                        <a href="#" class="news-content__item">
+                                            <img class="news-content-item__img" src="./assets/img/04.png" alt="" >
+                                            <div class="news-content-item__decription">
+                                                <h3 class="news-content-item-decription__title">
+                                                    Người cao tuổi mong ước gì về không gian sống?
+                                                </h3>
+                                                <p class="news-content-item-decription__sub-title">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                    Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
+                                                </p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="news-content__item">
+                                            <img class="news-content-item__img" src="./assets/img/10.png" alt="" >
+                                            <div class="news-content-item__decription">
+                                                <h3 class="news-content-item-decription__title">
+                                                    Người cao tuổi mong ước gì về không gian sống?
+                                                </h3>
+                                                <p class="news-content-item-decription__sub-title">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                    Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
+                                                </p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="news-content__item">
+                                            <img class="news-content-item__img" src="./assets/img/11.png" alt="" >
+                                            <div class="news-content-item__decription">
+                                                <h3 class="news-content-item-decription__title">
+                                                    Người cao tuổi mong ước gì về không gian sống?
+                                                </h3>
+                                                <p class="news-content-item-decription__sub-title">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                    Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
+                                                </p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="news-content__item">
+                                            <img class="news-content-item__img" src="./assets/img/12.png" alt="" >
+                                            <div class="news-content-item__decription">
+                                                <h3 class="news-content-item-decription__title">
+                                                    Người cao tuổi mong ước gì về không gian sống?
+                                                </h3>
+                                                <p class="news-content-item-decription__sub-title">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                    Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
+                                                </p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="news-content__item">
+                                            <img class="news-content-item__img" src="./assets/img/24.png" alt="" >
+                                            <div class="news-content-item__decription">
+                                                <h3 class="news-content-item-decription__title">
+                                                    Người cao tuổi mong ước gì về không gian sống?
+                                                </h3>
+                                                <p class="news-content-item-decription__sub-title">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                                    Cumque obcaecati mollitia minima iste eum quisquam ab nulla quo architecto asperiores ducimus molestiae suscipit quod nobis beatae magnam, quidem optio est.
+                                                </p>
+                                            </div>
+                                            <div class="news-content__label">
+                                                <div class="news-content-label__numb">26</div>
+                                                <p class="news-content-label__month">Jan</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-0 m-12 s-12 news-navigation navigation-mobile">
+                                        <div class="news-navigation__button">1</div>
+                                        <div class="news-navigation__button news-navigation__button--active">2</div>
+                                        <div class="news-navigation__button">3</div>
+                                    </div>
                                 </div>
+                                <div class="implemented-project__content">
+                                </div>
+                                <div class="implemented-project__content"></div>
+                                <div class="implemented-project__content"></div>
                             </div>
                             <div class="col l-4 news-content--border">
                                 <div class="news-activity">
@@ -404,8 +428,10 @@
                                     <div class="news-featured-video__content">
                                         <a href="" class="news-featured-video__link">
                                             <img src="./assets/img/32.png" alt="" class="news-featured-video__poster">
-                                            <div class="news-featured-video__title">Mauris bibendum tempus tellus a gravida. Ut cursus maximus</div>
+                                            <div>
+                                                <div class="news-featured-video__title">Mauris bibendum tempus tellus a gravida. Ut cursus maximus</div>
                                             <div class="news-featured-video__date">15 Aug 2018</div>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>
@@ -416,11 +442,11 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="news-navigation">
-                                <div class="news-navigation__button">1</div>
-                                <div class="news-navigation__button news-navigation__button--active">2</div>
-                                <div class="news-navigation__button">3</div>
-                            </div>
+                        </div>
+                        <div class="col l-12 news-navigation navigation-desktop">
+                            <div class="news-navigation__button">1</div>
+                            <div class="news-navigation__button news-navigation__button--active">2</div>
+                            <div class="news-navigation__button">3</div>
                         </div>
                     </div>
                 </div>
@@ -429,10 +455,8 @@
         <div class="footer">
             <div class="grid wide">
                 <div class="row footer__separator">
-                    <div class="col l-2">
-                        <a href="index.html">
-                            <img src="./assets/img/dng-logo.png" alt="">
-                        </a>
+                    <div class="col l-2 m-4 s-6">
+                        <img src="./assets/img/dng-logo.png" alt="">
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <div class="footer-item__content">
@@ -482,7 +506,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Về DNG</h4>
                             <ul class="footer__list">
@@ -507,7 +531,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Dự án</h4>
                             <ul class="footer__list">
@@ -529,7 +553,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Tuyển dụng</h4>
                             <ul class="footer__list">
@@ -548,7 +572,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2  m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Tin tức</h4>
                             <ul class="footer__list">
@@ -567,7 +591,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2  m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Hoạt động</h4>
                             <ul class="footer__list">
@@ -592,8 +616,57 @@
                 </div>
             </div>
         </div>
+        <div class="menu-overlay">
+            <div class="menu-overlay-body">
+                <div class="mobile-header">
+                    <div class="menu-mobile-close">
+                        <div class="menu-mobile__icon">
+                            <i class="fi fi-br-cross"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mobile__search">
+                    <input type="text" class="menu-mobile__search-input" name="mobilesearch" placeholder="Tìm kiếm">
+                    <i class="fi fi-br-search"></i>
+                </div>
+                <div class="menu-mobile__nav">
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile-item"><a href="index.html">Giới thiệu</a></li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="project.html">Dự án</a>   
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Chung cư</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Shop house</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự biển</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Nhà liền kề</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="recruit.html">Tuyển dụng</a>
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Triết lý nhân sự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Chính sách tuyển dụng</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Quyền lợi</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Vị trí tuyển dụng</a>  </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item"><a href="news.html">Tin tức</a></li>
+                        <li class="menu-mobile-item"><a href="#">Hoạt động</a></li>
+                        <li class="menu-mobile-item">Liên hệ: <a href="tel:+335 08 15 08 90">335 08 15 08 90</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-
-</body>
+    <script src="./assets/js/main.js"></script>
+</body> 
 
 </html>

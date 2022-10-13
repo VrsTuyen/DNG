@@ -1,9 +1,200 @@
 /* >= Tablet */
 @media (min-width: 740px) {
+  /* .news-navigation.navigation-mobile {
+    display: flex;
+  } */
+}
+
+/*-------------------------------- mobile, tablet------------------------------------- */
+
+@media (max-width: 1023px) {
+  .implemented-nav__item:first-child {
+    margin-left: 0;
+  }
+  .implemented-item {
+    margin-bottom: 70px;
+    width: 100%;
+  }
+  .implemented-item-img {
+    width: calc(100% - 7px);
+  }
+  .implemented-nav {
+    flex-direction: column;
+  }
+  .h2-heading {
+    text-align: center;
+  }
+  .h2-heading::after {
+    width: 0;
+  }
+
+  .navigation-right {
+    margin-left: 0;
+  }
+  .recruit-position {
+    margin-top: 10px;
+  }
+  .activities-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile__news {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+  }
+  .news-content-decription {
+    max-width: unset;
+  }
+  .working-space {
+    height: auto;
+  }
+  .about-content-right {
+    border-right: 1px solid var(--third-color);
+  }
+  .project-idea {
+    padding: 32px 16px 60px;
+  }
+  .project__video {
+    padding: 60px 16px 72px;
+  }
+  .project-idea__container-img img,
+  .project-video-item,
+  .ground-project__img,
+  .content-img-left {
+    width: 100%;
+  }
+  .content-img-left {
+    padding: 0 16px;
+  }
+  .project-image__img {
+    width: 100%;
+  }
+  .ground-project__item {
+    max-width: unset;
+  }
+  .project-video__decription {
+    margin-right: 16px;
+  }
+  .project-video-item {
+    max-width: unset;
+  }
+  .recruit-interest-decription__p {
+    margin: 12px 0 12px;
+  }
+
+  .recruit-come-with-us__content .col:nth-child(1) {
+    order: 2;
+  }
+  .recruit-come-with-us__content .col:nth-child(2) {
+    order: 1;
+  }
+  .recruit-interest__img {
+    width: 100%;
+    max-width: unset;
+    max-height: unset;
+  }
+  .recruit-career-orientation_p {
+    margin-right: 16px;
+  }
+  .recruit-career-orientation__img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .recruit-career-orientation-img {
+    max-width: unset;
+  }
+  .recruit-come-with-us__decription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .recruit-come-with-us__img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: unset;
+    max-height: unset;
+  }
+  .activate-search__container {
+    margin-top: 0;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .activate__search {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .selector {
+    min-width: 100px;
+    margin-bottom: 16px;
+  }
+
+  .news-content-item__decription {
+    margin-right: 0;
+  }
+  .news-content--border {
+    border: none;
+  }
+  .news-recruit__img,
+  .news-featured-video__content {
+    width: 80%;
+    margin: 20px 10%;
+  }
+  .news-featured-video__poster {
+    margin: 20px auto;
+    display: flex;
+    max-width: unset;
+    max-height: unset;
+  }
+  .news-recruit-img__link,
+  .news-featured-video__poster {
+    width: 100%;
+    height: auto;
+  }
+  .news-recruit__img {
+    max-width: none;
+    max-height: none;
+  }
+  .news-featured-video__title {
+    margin-right: 0;
+  }
+  .phone__number {
+    display: none;
+  }
+  .news-activity {
+    margin: 0;
+  }
+  .navigation-desktop {
+    display: none;
+  }
+  .navigation-mobile {
+    display: flex;
+  }
+  .btn-show-more {
+    margin: 50px auto 32px;
+  }
+  .news-content {
+    max-width: unset;
+    max-height: unset;
+  }
+  .news-content img {
+    width: 100%;
+  }
 }
 
 /* mobile */
 @media (max-width: 739px) {
+  .row {
+    margin: 0;
+  }
+
+  .activities__header {
+    padding: 0 16px;
+  }
   .header-navbar-link {
     margin-left: 16px;
   }
@@ -27,6 +218,7 @@
   }
   .element-content-right__img {
     width: 100%;
+    padding: 0 16px;
   }
   .activities-content-right__element {
     display: flex;
@@ -97,82 +289,116 @@
   .project-idea-design__title {
     text-align: center;
   }
-}
 
-/* mobile, tablet */
-@media (max-width: 1023px) {
-  .implemented-item {
-    margin-bottom: 70px;
-    width: 100%;
-  }
-  .implemented-item-img {
-    width: calc(100% - 7px);
-  }
-  .implemented-nav {
-    flex-direction: column;
-  }
-  .h2-heading {
-    text-align: center;
-  }
-  .h2-heading::after {
-    width: 0;
-  }
+  /* recriut */
 
-  .navigation-right {
-    margin-left: 0;
+  .slide-img-button__left {
+    margin-left: 16px;
   }
-  .recruit-position {
-    margin-top: 10px;
-  }
-  .activities-news {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mobile__news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 16px 0;
-  }
-  .news-content-decription {
-    max-width: 390px;
-  }
-  .working-space {
-    height: auto;
-  }
-  .about-content-right {
-    border-right: 1px solid var(--third-color);
-  }
-  .project-idea {
-    padding: 32px 16px 60px;
-  }
-  .project__video {
-    padding: 60px 16px 72px;
-  }
-  .project-idea__container-img img,
-  .project-video-item,
-  .ground-project__img,
-  .content-img-left {
-    width: 100%;
-  }
-  .content-img-left {
-    padding: 0 16px;
-  }
-  .project-image__img {
-    width: 100%;
-  }
-  .ground-project__item {
-    max-width: unset;
-  }
-  .project-video__decription {
+  .slide-img-button__right {
     margin-right: 16px;
   }
-  .project-video-item {
+  .recruit__career-orientation .recruit-career-orientation-img {
+    padding: 0 16px;
+    max-width: un;
+  }
+  .recruit-come-with-us__img img,
+  .recruit-career-orientation-img {
     max-width: unset;
+    width: 100%;
+  }
+  .recruit-career-orientation__heading {
+    margin-left: 16px;
+  }
+  .recruit-career-orientation_p {
+    font-size: 1.8rem;
+    margin: 16px;
+  }
+  .vacancies .h2-heading,
+  .recruit__come-with-us .h2-heading {
+    padding: 0 16px;
+  }
+  /* table */
+  .vacancies__table {
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+    display: block;
+  } /*
+  .vacancies__table::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  } */
+  .vacancies-table-heading th {
+    min-width: 150px;
+  }
+  .vacancies-table-heading th:first-child {
+    min-width: 250px;
+  }
+  .vacancies-table-heading th:last-child {
+    min-width: 150px;
+  }
+  .recruit-interest__img {
+    padding: 0 16px;
+  }
+  .footer {
+    margin: 0 16px;
+  }
+  .recruit-career-orientation__heading {
+    font-size: 2rem;
+  }
+  .recruit-career-orientation_p {
+    margin-right: 16px;
+  }
+  .recruit-come-with-us__decription {
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .implemented-nav__list {
+    margin-left: 16px;
+  }
+  .recruit-interest-decription__p {
+    margin: 8px 16px;
+  }
+  .welcome__container {
+    margin-bottom: 32px;
+  }
+  .news-content__label {
+    top: 0;
+    left: 0;
+  }
+  .activate__search {
+    margin-top: 16px;
+  }
+  .news-content-item__decription {
+    margin-left: 16px;
+  }
+  .news-content-item__img {
+    width: 50%;
+    height: auto;
+  }
+  .header-navbar__search {
+    display: none;
+  }
+  .selector {
+    width: 30%;
+  }
+  .selector__heading {
+    margin-left: 0;
+  }
+  .selector:nth-child(2) {
+    margin: 0 10px;
+  }
+  .selector.selector__quantity {
+    width: 40%;
+  }
+  .news-navigation.navigation-mobile {
+    display: flex;
   }
 }
+
 /* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
 }
@@ -221,13 +447,36 @@
   .ground-project__item {
     max-width: unset;
   }
-  .ground-project__link {
-  }
   .project-idea-design__img {
     margin: 8px 10px 8px;
   }
-}
-
-/* PC medium resolution > */
-@media (min-width: 1113px) {
+  .recruit-career-orientation__content.black-color {
+    display: flex;
+  }
+  .selector {
+    min-width: unset;
+  }
+  .col.news-content__item {
+    display: flex;
+    flex-direction: row;
+  }
+  .news-content-item__img {
+    width: 50%;
+    height: auto;
+  }
+  .news-content-item__decription {
+    margin-right: 0;
+    margin-left: 0;
+    width: 50%;
+    padding: 0 8px;
+  }
+  .news-featured-video__title {
+    margin-right: 16px;
+  }
+  .news-navigation.navigation-mobile {
+    display: none;
+  }
+  .news-navigation.navigation-desktop {
+    display: flex;
+  }
 }

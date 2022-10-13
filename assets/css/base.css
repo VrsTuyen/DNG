@@ -7,6 +7,7 @@
   --fourth-color: #dc4c4a;
   --text-color: #262626;
 
+  --margin: 72px;
   --header-height: 70px;
 }
 
@@ -319,6 +320,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  user-select: none;
 }
 .selector:hover {
   cursor: pointer;
@@ -355,6 +357,10 @@
   overflow: auto;
   animation: scale ease 0.3s;
   transform-origin: top center;
+}
+.selector i {
+  display: flex;
+  margin-left: 6px;
 }
 @keyframes scale {
   0% {

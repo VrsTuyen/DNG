@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="icon" href="./assets/img/dng-logo.ico"> 
-    <title>DNG</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+            <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+            <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
+            <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="icon" href="./assets/img/dng-logo.ico">
+        <link rel="stylesheet" href="./assets/css/reponsive.css">
+        <title>DNG</title>
+    </head>
 
 <body>
     <div id="main">
@@ -30,46 +32,51 @@
         <header class="header">
             <div class="grid wide">
                 <div class="row header__navbar ">
-                    <div class="col l-3 header-navbar-img__link">
+                    <div class="col l-3 m-3 s-12 header-navbar-img__link">
                         <a href="/" class="header-navbar-link">
                             <img src="./assets/img/dng-logo.png" alt="DNG Việt Nam">
                         </a>
+                        <div class="menu-mobile">
+                            <div class="menu-mobile__icon">
+                                <i class="fi fi-br-menu-burger"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col nav-bar full-height">
+                    <div class="col l-6 m-9 s-0 nav-bar full-height">
                         <ul class="header-navbar__list">
-                            <li class="header-navbar__item ">
-                                <a href="index.html" class="header-navbar__link">Về DNG</a>
+                            <li class="header-navbar__item">
+                               <a href="index.html" class="header-navbar__link">Về DNG</a>
                             </li>
                             <li class="header-navbar__item">
                                 <a href="project.html" class="header-navbar__link">
                                     Dự án</a>
-                                <div class="header-navbar__icon">
-                                    <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
-                                            fill="#808080" />
-                                    </svg>
-                                </div>
-                                <ul class="header-navbar__sub-menu">
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Chung cư</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Biệt thự</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Shop house</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Biệt thự biển</a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a href="#" class="sub-menu-item__link">Nhà liền kề</a>
-                                    </li>
-                                </ul>
+                                    <div class="header-navbar__icon">
+                                        <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.74609 4.19141C3.66406 4.24609 3.58203 4.27344 3.5 4.27344C3.39062 4.27344 3.33594 4.24609 3.28125 4.19141L0.0820312 0.964844C0.0273438 0.910156 0 0.828125 0 0.746094C0 0.636719 0.0273438 0.554688 0.109375 0.5L0.300781 0.308594C0.355469 0.253906 0.410156 0.226562 0.519531 0.226562C0.601562 0.226562 0.683594 0.253906 0.765625 0.308594L3.5 3.09766L6.23438 0.308594C6.28906 0.226562 6.37109 0.199219 6.48047 0.199219C6.5625 0.199219 6.64453 0.226562 6.69922 0.308594L6.91797 0.5C6.97266 0.554688 7 0.636719 7 0.746094C7 0.828125 6.97266 0.910156 6.91797 0.964844L3.74609 4.19141Z"
+                                                fill="#808080" />
+                                        </svg>
+                                    </div>
+                                    <ul class="header-navbar__sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Chung cư</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Biệt thự</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Shop house</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Biệt thự biển</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu-item__link">Nhà liền kề</a>
+                                        </li>
+                                    </ul>
                             </li>
-                            <li class="header-navbar__item header-navbar-item--active">
+                            <li class="header-navbar__item  header-navbar-item--active">
                                 <a href="recruit.html" class="header-navbar__link">Tuyển dụng</a>
                                 <div class="header-navbar__icon">
                                     <svg width="7" height="5" class="header-nav-bar-icon__svg" viewBox="0 0 7 5"
@@ -93,8 +100,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header-navbar__item"><a href="news.html" class="header-navbar__link">Tin tức</a>
-                            </li>
+                            <li class="header-navbar__item"><a href="news.html" class="header-navbar__link">Tin tức</a></li>
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Hoạt động</a></li>
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Liên hệ</a></li>
                         </ul>
@@ -133,6 +139,7 @@
                             </label>
                         </div>
                     </div>
+                    
                 </div>
         </header>
         <!-- main -->
@@ -143,7 +150,7 @@
                 rgba(40, 40, 40, 1),
                 rgba(58, 58, 57, 0)),
             url(./assets/img/image-8.png) top center / cover no-repeat;">
-                    <div class="slide-img-button__left">
+                    <div class="slide-img-button__left" onclick="slideImg(-1, background3)">
                         <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -163,7 +170,7 @@
                             <div class="derection-button"></div>
                         </div>
                     </div>
-                    <div class="slide-img-button__right">
+                    <div class="slide-img-button__right" onclick="slideImg(1,background3)">
                         <svg width="15" height="32" viewBox="0 0 15 32" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -178,12 +185,12 @@
                             <div class="col l-12">
                                 <h2 class="h2-heading">Quyền lợi tại DNG</h2>
                                 <div class="row">
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-interest__img">
                                             <img src="./assets/img/image-18.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="col l-6 recruit-interest-content">
+                                    <div class="col l-6 m-12 s-12 recruit-interest-content">
                                         <div class="recruit-interest__decription">
                                             <p class="recruit-interest-decription__p">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -215,29 +222,65 @@
                                     </div>
                                     <ul class="implemented-nav__list white-color">
                                         <li class="implemented-nav__item implemented-nav-item--active">
-                                            <a href="" class="implemented-nav-item__link">Chuyên viên tư vấn</a>
+                                            <a  class="implemented-nav-item__link">Chuyên viên tư vấn</a>
                                         </li>
                                         <li class="implemented-nav__item">
-                                            <a href="" class="implemented-nav-item__link">Telesale</a>
+                                            <a class="implemented-nav-item__link">Telesale</a>
                                         </li>
                                         <li class="implemented-nav__item">
-                                            <a href="" class="implemented-nav-item__link">Marketing</a>
+                                            <a class="implemented-nav-item__link">Marketing</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="row">
-                                    <div class="col l-6 recruit-career-orientation__content white-color">
-                                        <h3 class="recruit-career-orientation__heading ">Chuyên viên tư vấn</h3>
-                                        <p class="recruit-career-orientation_p">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                            Qui, aspernatur voluptatum.
-                                            Praesentium debitis repellendus vel harum hic cumque nemo,
-                                            quia illum autem,
-                                            atque ex maxime tempora quam sunt laudantium enim.</p>
+                                <div class="implemented-project__content active">
+                                    <div class="row">
+                                        <div class="col l-6 m-12 s-12 recruit-career-orientation__content white-color">
+                                            <h3 class="recruit-career-orientation__heading ">Chuyên viên tư vấn</h3>
+                                            <p class="recruit-career-orientation_p">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Qui, aspernatur voluptatum.
+                                                Praesentium debitis repellendus vel harum hic cumque nemo,
+                                                quia illum autem,
+                                                atque ex maxime tempora quam sunt laudantium enim.</p>
+                                        </div>
+                                        <div class="col l-6 recruit-career-orientation__img">
+                                            <img src="./assets/img/image-7.png" alt=""
+                                                class="recruit-career-orientation-img">
+                                        </div>
                                     </div>
-                                    <div class="col l-6">
-                                        <img src="./assets/img/image-7.png" alt=""
-                                            class="recruit-career-orientation-img">
+                                </div>
+                                <div class="implemented-project__content">
+                                    <div class="row">
+                                        <div class="col l-6 m-12 s-12 recruit-career-orientation__content white-color">
+                                            <h3 class="recruit-career-orientation__heading ">Telesale</h3>
+                                            <p class="recruit-career-orientation_p">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Qui, aspernatur voluptatum.
+                                                Praesentium debitis repellendus vel harum hic cumque nemo,
+                                                quia illum autem,
+                                                atque ex maxime tempora quam sunt laudantium enim.</p>
+                                        </div>
+                                        <div class="col l-6 recruit-career-orientation__img">
+                                            <img src="./assets/img/image-7.png" alt=""
+                                                class="recruit-career-orientation-img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="implemented-project__content">
+                                    <div class="row">
+                                        <div class="col l-6 m-12 s-12 recruit-career-orientation__content white-color">
+                                            <h3 class="recruit-career-orientation__heading ">Marketing</h3>
+                                            <p class="recruit-career-orientation_p">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Qui, aspernatur voluptatum.
+                                                Praesentium debitis repellendus vel harum hic cumque nemo,
+                                                quia illum autem,
+                                                atque ex maxime tempora quam sunt laudantium enim.</p>
+                                        </div>
+                                        <div class="col l-6 recruit-career-orientation__img">
+                                            <img src="./assets/img/image-7.png" alt=""
+                                                class="recruit-career-orientation-img">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -254,32 +297,67 @@
                                     </div>
                                     <ul class="implemented-nav__list black-color">
                                         <li class="implemented-nav__item implemented-nav-item--active">
-                                            <a href="" class="implemented-nav-item__link">Chuyên viên tư vấn</a>
+                                            <a class="implemented-nav-item__link">Phát triển nhân viên</a>
                                         </li>
                                         <li class="implemented-nav__item">
-                                            <a href="" class="implemented-nav-item__link">Telesale</a>
+                                            <a class="implemented-nav-item__link">Chính sách đãi ngộ</a>
                                         </li>
                                         <li class="implemented-nav__item">
-                                            <a href="" class="implemented-nav-item__link">Marketing</a>
+                                            <a class="implemented-nav-item__link">Hoạt động giải trí</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="row">
-                                    <div class="col l-6">
-                                        <img src="./assets/img/image-13.png" alt=""
-                                            class="recruit-career-orientation-img">
+                                <div class="implemented-project__content active">
+                                    <div class="row">
+                                        <div class="col l-6 m-12 s-12">
+                                            <img src="./assets/img/image-13.png" alt=""
+                                                class="recruit-career-orientation-img">
+                                        </div>
+                                        <div class="col l-6 recruit-career-orientation__content black-color">
+                                            <h3 class="recruit-career-orientation__heading primary-color">Phát triển
+                                                nhân viên</h3>
+                                            <p class="recruit-career-orientation_p">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Qui, aspernatur voluptatum.
+                                                Praesentium debitis repellendus vel harum hic cumque nemo,
+                                                quia illum autem,
+                                                atque ex maxime tempora quam sunt laudantium enim.</p>
+                                        </div>
                                     </div>
-                                    <div class="col l-6 recruit-career-orientation__content black-color">
-                                        <h3 class="recruit-career-orientation__heading primary-color">Phát triển
-                                            nhân viên</h3>
-                                        <p class="recruit-career-orientation_p">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                            Qui, aspernatur voluptatum.
-                                            Praesentium debitis repellendus vel harum hic cumque nemo,
-                                            quia illum autem,
-                                            atque ex maxime tempora quam sunt laudantium enim.</p>
+                                </div>
+                                <div class="implemented-project__content ">
+                                    <div class="row">
+                                        <div class="col l-6 m-12 s-12">
+                                            <img src="./assets/img/image-13.png" alt=""
+                                                class="recruit-career-orientation-img">
+                                        </div>
+                                        <div class="col l-6 recruit-career-orientation__content black-color">
+                                            <h3 class="recruit-career-orientation__heading primary-color">Chính sách đãi ngộ</h3>
+                                            <p class="recruit-career-orientation_p">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Qui, aspernatur voluptatum.
+                                                Praesentium debitis repellendus vel harum hic cumque nemo,
+                                                quia illum autem,
+                                                atque ex maxime tempora quam sunt laudantium enim.</p>
+                                        </div>
                                     </div>
-
+                                </div>
+                                <div class="implemented-project__content ">
+                                    <div class="row">
+                                        <div class="col l-6 m-12 s-12">
+                                            <img src="./assets/img/image-13.png" alt=""
+                                                class="recruit-career-orientation-img">
+                                        </div>
+                                        <div class="col l-6 recruit-career-orientation__content black-color">
+                                            <h3 class="recruit-career-orientation__heading primary-color">Hoạt động giải trí</h3>
+                                            <p class="recruit-career-orientation_p">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Qui, aspernatur voluptatum.
+                                                Praesentium debitis repellendus vel harum hic cumque nemo,
+                                                quia illum autem,
+                                                atque ex maxime tempora quam sunt laudantium enim.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +371,7 @@
                             </div>
                             <div class="col l-12">
                                 <div class="row recruit-come-with-us__content">
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12 ">
                                         <div class="recruit-come-with-us__decription">
                                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                             Id quisquam dolores fugiat sequi obcaecati!
@@ -302,7 +380,7 @@
                                             Eum maxime rem quos tempore porro? Laudantium!
                                         </div>
                                     </div>
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-come-with-us__img">
                                             <img src="./assets/img/image2.2.png" alt="">
                                         </div>
@@ -311,7 +389,7 @@
                             </div>
                             <div class="col l-12">
                                 <div class="row recruit-come-with-us__content">
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-come-with-us__decription">
                                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                             Id quisquam dolores fugiat sequi obcaecati!
@@ -322,7 +400,7 @@
 
 
                                     </div>
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-come-with-us__img">
                                             <img src="./assets/img/image2.1.png" alt="">
                                         </div>
@@ -331,7 +409,7 @@
                             </div>
                             <div class="col l-12">
                                 <div class="row recruit-come-with-us__content">
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-come-with-us__decription">
                                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                             Id quisquam dolores fugiat sequi obcaecati!
@@ -340,7 +418,7 @@
                                             Eum maxime rem quos tempore porro? Laudantium!
                                         </div>
                                     </div>
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-come-with-us__img">
                                             <img src="./assets/img/image2.3.png" alt="">
                                         </div>
@@ -349,7 +427,7 @@
                             </div>
                             <div class="col l-12">
                                 <div class="row recruit-come-with-us__content">
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-come-with-us__decription">
                                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                             Id quisquam dolores fugiat sequi obcaecati!
@@ -360,7 +438,7 @@
 
 
                                     </div>
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 s-12">
                                         <div class="recruit-come-with-us__img">
                                            <a href="index.html"> <img src="./assets/img/image2.4.png" alt=""></a>
                                         </div>
@@ -377,14 +455,17 @@
                                 <h2 class="h2-heading">Vị trí tuyển dụng</h2>
                             </div>
                             <table class="vacancies__table">
+                               <thead>
                                 <tr class="vacancies-table-heading">
-                                    <th>Vị trí tuyển dụng</th>
+                                    <th style="width: 200px;">Vị trí tuyển dụng</th>
                                     <th>Mã ứng tuyển</th>
                                     <th>Số lượng</th>
                                     <th>Địa điểm</th>
                                     <th>Ngày hết hạn</th>
                                     <th></th>
                                 </tr>
+                               </thead>
+                                <tbody>
                                 <tr>
                                     <td>Giám đốc điều hành khu vực
                                         (TPHCM, Phan Thiết, Khánh Hoà, Cần Thơ)
@@ -537,16 +618,16 @@
                                     <td><a href="#" class="vacancies-table__link">Ứng tuyển</a>
                                     </td>
                                 </tr>
+                            </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
+        </div><div class="footer">
             <div class="grid wide">
                 <div class="row footer__separator">
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 s-6">
                         <img src="./assets/img/dng-logo.png" alt="">
                         <ul class="footer__list">
                             <li class="footer__item">
@@ -597,7 +678,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Về DNG</h4>
                             <ul class="footer__list">
@@ -622,7 +703,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Dự án</h4>
                             <ul class="footer__list">
@@ -644,7 +725,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Tuyển dụng</h4>
                             <ul class="footer__list">
@@ -663,7 +744,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2  m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Tin tức</h4>
                             <ul class="footer__list">
@@ -682,7 +763,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2  m-4 s-6">
                         <div class="footer-heading-list">
                             <h4 class="footer__heading-list-item">Hoạt động</h4>
                             <ul class="footer__list">
@@ -707,7 +788,57 @@
                 </div>
             </div>
         </div>
+        <div class="menu-overlay">
+            <div class="menu-overlay-body">
+                <div class="mobile-header">
+                    <div class="menu-mobile-close">
+                        <div class="menu-mobile__icon">
+                            <i class="fi fi-br-cross"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mobile__search">
+                    <input type="text" class="menu-mobile__search-input" name="mobilesearch" placeholder="Tìm kiếm">
+                    <i class="fi fi-br-search"></i>
+                </div>
+                <div class="menu-mobile__nav">
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile-item"><a href="index.html">Giới thiệu</a></li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="project.html">Dự án</a>   
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Chung cư</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Shop house</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Biệt thự biển</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Nhà liền kề</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item">
+                            <div>
+                                <a href="recruit.html">Tuyển dụng</a>
+                            <i class="fi fi-rs-angle-down"></i>
+                            </div>
+                            <ul class="menu-mobile-sub">
+                                <li class = "menu-mobile__sub-item"><a href="">Triết lý nhân sự</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Chính sách tuyển dụng</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Quyền lợi</a> </li>
+                                <li class = "menu-mobile__sub-item"><a href="">Vị trí tuyển dụng</a>  </li>
+                            </ul>
+                        </li>
+                        <li class="menu-mobile-item"><a href="news.html">Tin tức</a></li>
+                        <li class="menu-mobile-item"><a href="#">Hoạt động</a></li>
+                        <li class="menu-mobile-item">Liên hệ: <a href="tel:+335 08 15 08 90">335 08 15 08 90</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

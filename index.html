@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-        <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="./assets/fonts/uicons-solid-rounded/css/uicons-solid-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
@@ -105,7 +105,7 @@
                             <li class="header-navbar__item"><a href="#" class="header-navbar__link">Liên hệ</a></li>
                         </ul>
                     </div>
-                    <div class="col l-3 m-0 s-0">
+                    <div class="col l-3">
                         <div class="search">
                             <a href="tel:335 08 15 08 90" class="phone__number">
                                 <div class="header-navbar__phone">
@@ -175,33 +175,34 @@
                                     <div class="derection-button"></div>
                                 </div>
                                 <div class="slide-content__arrow-down">
-                                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                    <a href="#">
+                                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <g filter="url(#filter0_d_35_3)">
-                                            <path d="M12 15L22.2086 23.5339L32.4172 15" stroke="#E5E5E5"
-                                                stroke-width="2" />
-                                            <circle cx="22.5" cy="18.5" r="17.5" stroke="white"
-                                                stroke-width="2" />
-                                        </g>
-                                        <defs>
-                                            <filter id="filter0_d_35_3" x="0" y="0" width="45" height="45"
-                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                                    result="hardAlpha" />
-                                                <feOffset dy="4" />
-                                                <feGaussianBlur stdDeviation="2" />
-                                                <feColorMatrix type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                                <feBlend mode="normal" in2="BackgroundImageFix"
-                                                    result="effect1_dropShadow_35_3" />
-                                                <feBlend mode="normal" in="SourceGraphic"
-                                                    in2="effect1_dropShadow_35_3" result="shape" />
-                                            </filter>
-                                        </defs>
-                                    </svg>
-
+                                            <g filter="url(#filter0_d_35_3)">
+                                                <path d="M12 15L22.2086 23.5339L32.4172 15" stroke="#E5E5E5"
+                                                    stroke-width="2" />
+                                                <circle cx="22.5" cy="18.5" r="17.5" stroke="white"
+                                                    stroke-width="2" />
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_35_3" x="0" y="0" width="45" height="45"
+                                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                        result="hardAlpha" />
+                                                    <feOffset dy="4" />
+                                                    <feGaussianBlur stdDeviation="2" />
+                                                    <feColorMatrix type="matrix"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_35_3" />
+                                                    <feBlend mode="normal" in="SourceGraphic"
+                                                        in2="effect1_dropShadow_35_3" result="shape" />
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +230,7 @@
                     </span>
                 </div>
             </div>
-            <div class="more-info br-bg">
+            <div id = "more-info" class="more-info br-bg">
                 <div class="grid wide">
                     <div class="row">
                         <div class="col l-8 l-o-2">
@@ -1284,7 +1285,7 @@
             <div class="footer">
                 <div class="grid wide">
                     <div class="row footer__separator">
-                        <div class="col l-2 m-4 s-4">
+                        <div class="col l-2 m-4 s-6">
                             <img src="./assets/img/dng-logo.png" alt="">
                             <ul class="footer__list">
                                 <li class="footer__item">
@@ -1335,7 +1336,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col l-2 m-4 s-4">
+                        <div class="col l-2 m-4 s-6">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Về DNG</h4>
                                 <ul class="footer__list">
@@ -1360,7 +1361,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2 m-4 s-4">
+                        <div class="col l-2 m-4 s-6">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Dự án</h4>
                                 <ul class="footer__list">
@@ -1382,7 +1383,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2 m-4 s-4">
+                        <div class="col l-2 m-4 s-6">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Tuyển dụng</h4>
                                 <ul class="footer__list">
@@ -1401,7 +1402,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2  m-4">
+                        <div class="col l-2  m-4 s-6">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Tin tức</h4>
                                 <ul class="footer__list">
@@ -1420,7 +1421,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-2  m-4">
+                        <div class="col l-2  m-4 s-6">
                             <div class="footer-heading-list">
                                 <h4 class="footer__heading-list-item">Hoạt động</h4>
                                 <ul class="footer__list">

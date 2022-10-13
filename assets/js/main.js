@@ -42,6 +42,34 @@ tab(
   'implemented-nav-item--active'
 )
 
+tab(
+  $$(
+    '.recruit__career-orientation .implemented-nav__list.white-color .implemented-nav__item'
+  ),
+  $$('.recruit__career-orientation .implemented-project__content'),
+  '.recruit__career-orientation .implemented-nav__item.implemented-nav-item--active',
+  '.recruit__career-orientation .implemented-project__content.active',
+  'implemented-nav-item--active'
+)
+
+tab(
+  $$(
+    '.recruit__career-orientation.people-bg .implemented-nav__list.black-color .implemented-nav__item'
+  ),
+  $$('.recruit__career-orientation.people-bg .implemented-project__content'),
+  '.recruit__career-orientation.people-bg .implemented-nav__item.implemented-nav-item--active',
+  '.recruit__career-orientation.people-bg .implemented-project__content.active',
+  'implemented-nav-item--active'
+)
+tab(
+  $$('.news-content-heading__item'),
+  $$('.implemented-project__content'),
+  '.news-content-heading__item.news-content-heading__item--active',
+  '.implemented-project__content.active',
+  'news-content-heading__item--active'
+)
+// console.log($$('.implemented-nav__list.white-color .implemented-nav__item'))
+
 var slideIndex = 0
 var memberIndex = 0
 
@@ -53,6 +81,18 @@ var background1 = [
 
 var background2 = [
   './assets/img/15.png',
+  './assets/img/02.jpg',
+  './assets/img/01.jpg',
+]
+
+var background3 = [
+  './assets/img/image-8.png',
+  './assets/img/02.jpg',
+  './assets/img/01.jpg',
+]
+
+var background4 = [
+  './assets/img/image.png',
   './assets/img/02.jpg',
   './assets/img/01.jpg',
 ]
@@ -77,6 +117,31 @@ var aboutUs = [
     avt: './assets/img/member3.jpg',
   },
 ]
+
+/**
+ *
+ * 1. vi tri slide
+ * 2. derection-button
+ * 3. slide index
+ * 4. index
+ * 5. selector
+ * 6. active
+ * 7. array
+ */
+
+// function slide(
+//   element,
+//   derection,
+//   slideIndex,
+//   index,
+//   selector,
+//   active,
+//   ...array
+// ) {
+//   // const slide = $(element)
+// }
+
+// var slide = $()
 
 function slideMember(index) {
   var derectionButton = $$('.about-navigation__button')
@@ -113,7 +178,7 @@ function slideBackground(index) {
   slide.style.backgroundImage = `linear-gradient(rgba(38,38,38,0.28), rgba(38,38,38,0.28)), url(${background1[slideIndex]})`
   slide.style.backgroundPosition = 'center'
   slide.style.backgroundSize = 'cover'
-  slide.backgroundRepeat = 'no-repeat'
+  slide.style.backgroundRepeat = 'no-repeat'
 
   $('.slide .derection-button.derection-button--active').classList.remove(
     'derection-button--active'
@@ -133,13 +198,36 @@ function slideBackground2(index) {
   slide.style.backgroundImage = `linear-gradient(rgba(38, 38, 38, 0.5), rgba(38, 38, 38, 0.5)), url(${background2[slideIndex]})`
   slide.style.backgroundPosition = 'top center'
   slide.style.backgroundSize = 'cover'
-  slide.backgroundRepeat = 'no-repeat'
+  slide.style.backgroundRepeat = 'no-repeat'
   $(
     '.working-space-nav .derection-button.derection-button--active'
   ).classList.remove('derection-button--active')
   derectionButton[slideIndex].classList.add('derection-button--active')
 }
 
+function slideImg(index, background) {
+  var slide = $('.slide-img')
+  slideIndex += index
+
+  var derectionButton = $$('.derection-button')
+  if (slideIndex > 2) {
+    slideIndex = 0
+  } else if (slideIndex < 0) {
+    slideIndex = 2
+  }
+
+  slide.style.backgroundImage = `linear-gradient(to right,
+    rgba(40, 40, 40, 1),
+    rgba(58, 58, 57, 0)),
+   url(${background[slideIndex]})`
+  slide.style.backgroundPosition = 'top center'
+  slide.style.backgroundSize = 'cover'
+  slide.style.backgroundRepeat = 'no-repeat'
+  $('.derection-button.derection-button--active').classList.remove(
+    'derection-button--active'
+  )
+  derectionButton[slideIndex].classList.add('derection-button--active')
+}
 menuMobile()
 var isOpened = false
 
@@ -182,3 +270,34 @@ function submenuMobile() {
     }
   })
 }
+
+var contentsNew = $$('page')
+
+$$('.navigation-desktop .news-navigation__button').forEach(function (
+  item,
+  index
+) {
+  item.onclick = function (item) {
+    $(
+      '.navigation-desktop .news-navigation__button.news-navigation__button--active'
+    ).classList.remove('news-navigation__button--active')
+
+    $$('.navigation-desktop .news-navigation__button')[index].classList.add(
+      'news-navigation__button--active'
+    )
+  }
+})
+$$('.navigation-mobile .news-navigation__button').forEach(function (
+  item,
+  index
+) {
+  item.onclick = function (item) {
+    $(
+      '.navigation-mobile .news-navigation__button.news-navigation__button--active'
+    ).classList.remove('news-navigation__button--active')
+
+    $$('.navigation-mobile .news-navigation__button')[index].classList.add(
+      'news-navigation__button--active'
+    )
+  }
+})
