@@ -238,12 +238,12 @@ function menuMobile() {
   menuOpen.onclick = function () {
     if (!isOpened) {
       isOpened = true
-      overLay.style.display = 'block'
+      overLay.classList.add('active')
     }
   }
   menuClose.onclick = function () {
     isOpened = false
-    overLay.style.display = 'none'
+    overLay.classList.remove('active')
   }
 }
 submenuMobile()
@@ -301,3 +301,9 @@ $$('.navigation-mobile .news-navigation__button').forEach(function (
     )
   }
 })
+
+$('.slide-content__arrow-down').onclick = function () {
+  $("#more-info").scrollIntoView({
+    block: 'center',
+  })
+}
