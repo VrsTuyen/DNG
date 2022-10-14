@@ -184,6 +184,12 @@
   .news-content img {
     width: 100%;
   }
+  .project-idea-design__title {
+    margin-left: 0;
+  }
+  .recruit__career-orientation {
+    padding-bottom: 72px;
+  }
 }
 
 /* mobile */
