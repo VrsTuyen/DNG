@@ -1899,6 +1899,7 @@ html {
   outline: none;
   flex: 1;
   border: none;
+  width: 100%;
   margin-left: 8px;
   padding-left: 16px;
 }
