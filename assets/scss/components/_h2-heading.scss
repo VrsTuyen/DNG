@@ -1,0 +1,50 @@
+@mixin h2-heading {
+
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+  color: currentColor;
+  position: relative;
+  margin: 0;
+  padding-bottom: 1.2rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 3.4rem;
+    height: .02rem;
+    background-color: var(--active);
+    bottom: 0;
+    left: 0;
+
+    @include responsible(t) {
+      width: 0;
+    }
+  }
+
+  @include responsible(t) {
+    text-align: center;
+  }
+
+  &-has-border-bottom {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: $text-color;
+    line-height: 3.8rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    font-family: 'Nunito Sans';
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background-color: $second-color;
+    }
+  }
+}

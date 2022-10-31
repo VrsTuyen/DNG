@@ -1,0 +1,29 @@
+@mixin primary-button($background-color, $color) {
+
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 100px auto 72px;
+  background-color: $background-color;
+  color: currentColor;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.btn-show-more {
+  @include primary-button($primary-color, $white-color);
+
+  @include responsible(t) {
+    margin: 50px auto 32px;
+  }
+}

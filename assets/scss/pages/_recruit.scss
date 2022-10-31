@@ -1,0 +1,325 @@
+.slide-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+  &-button__left {
+    @include navigation-button(left);
+  }
+
+  &-button__right {
+    @include navigation-button(right);
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.recruit {
+  &-slide__heading {
+    font-size: 4.8rem;
+    max-width: 600px;
+  }
+
+  &__interest {
+    margin: 64px 0;
+    --active: $primary-color;
+  }
+
+  &-interest {
+    &__img {
+      margin-top: 48px;
+      max-width: 590px;
+      max-height: 550px;
+
+      @include responsible(t) {
+        width: 100%;
+        max-width: unset;
+        max-height: unset;
+      }
+
+      @include responsible(m) {
+        padding: 0 16px;
+
+      }
+
+      img {
+        width: 100%;
+
+      }
+    }
+
+    // kha nang cao khong can toi
+    // &-content {
+    //  display: flex;
+    // }
+
+    &__decription {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &-decription__p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2rem;
+      margin: 12px 20px 12px 82px;
+
+      @include responsible(t) {
+        margin: 12px 0 12px;
+
+      }
+
+      @include responsible(m) {
+        margin: 8px 16px;
+
+      }
+    }
+  }
+
+
+  &__career-orientation {
+    padding-bottom: 114px;
+
+    @include responsible(t) {
+      padding-bottom: 72px;
+    }
+  }
+
+  &-career-orientation {
+    &-nav {
+      margin-top: 64px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &.black-color {
+        @include responsible(l) {
+          display: flex;
+        }
+      }
+    }
+
+    &__heading {
+      color: currentColor;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 3.8rem;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      @include responsible(m) {
+        font-size: 2rem;
+        margin-left: 1.6rem;
+      }
+    }
+
+    &_p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 400;
+      color: currentColor;
+      margin-right: 102px;
+      margin-top: 14px;
+      padding: 0;
+
+      @include responsible(t) {
+        margin-right: 16px;
+      }
+
+      @include responsible(m) {
+        font-size: 1.8rem;
+        margin: 16px;
+      }
+    }
+
+    &__img {
+      @include responsible(t) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-img {
+      max-width: 590px;
+      width: 100%;
+      max-height: 456px;
+      margin-top: 2px;
+
+      @include responsible(t) {
+        max-width: unset;
+      }
+
+      @include responsible(m) {
+        padding: 0 16px;
+        max-width: unset;
+        width: 100%;
+      }
+    }
+  }
+
+  &__come-with-us {
+    background-color: #e5e5e5;
+    --active: $primary-color;
+    padding-top: 72px;
+    padding-bottom: 58px;
+  }
+
+  &-come-with-us {
+    &__content {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+
+      .col:nth-child(1) {
+        @include responsible(t) {
+          order: 2;
+        }
+      }
+
+      .col:nth-child(2) {
+        @include responsible(t) {
+          order: 1;
+        }
+      }
+    }
+
+    &__decription {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2rem;
+      color: var(--text-color);
+      margin-right: 180px;
+
+      @include responsible(t) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @include responsible(m) {
+        margin-right: 16px;
+        margin-left: 16px;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    &__img {
+      max-width: 588px;
+      max-height: 316px;
+      margin: 14px 0;
+
+      @include responsible(t) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: unset;
+        max-height: unset;
+      }
+
+      img {
+        width: 100%;
+
+        @include responsible(m) {
+          max-width: unset;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.vacancies {
+  padding: 72px 0;
+
+
+
+  &__table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+
+    @include responsible(m) {
+      overflow: auto;
+      width: 100%;
+      height: 500px;
+      display: block;
+    }
+
+    th {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.1rem;
+      color: $white-color;
+      text-align: left;
+      padding: 18px 20px;
+      border-color: $primary-color;
+
+      @include responsible(m) {
+        min-width: 150px;
+      }
+
+      &:first-child {
+        @include responsible(m) {
+          min-width: 250px;
+        }
+      }
+
+      &:last-child {
+        @include responsible(m) {
+          min-width: 150px;
+        }
+      }
+    }
+
+    td {
+      padding: 15px 20px;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #e9e9e9;
+
+      &:first-child {
+        max-width: 240px;
+
+      }
+    }
+  }
+
+  &-table {
+    &-heading {
+      background-color: $primary-color;
+
+    }
+
+    &__link {
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+        color: $second-color;
+      }
+    }
+  }
+}
+
+.implemented-nav__list {
+  @include responsible(m) {
+    margin-left: 16px;
+  }
+
+}
