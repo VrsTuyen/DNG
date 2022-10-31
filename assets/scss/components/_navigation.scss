@@ -1,0 +1,55 @@
+@mixin navigation-button($derection) {
+  @if $derection =="left" {
+    float: left;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all .1s;
+      cursor: pointer;
+    }
+
+    @include responsible(m) {
+      margin-left: 1.6rem;
+    }
+  }
+
+  @if $derection =="right" {
+    float: right;
+    transform: rotate(180deg);
+
+    &:hover {
+      transition: all .1s;
+      transform: rotate(180deg) scale(1.2);
+      cursor: pointer;
+    }
+
+    @include responsible(m) {
+      margin-right: 1.6rem;
+    }
+  }
+}
+
+.navigation-button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.derection-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid $white-color;
+
+  &--active {
+    background-color: $white-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:nth-child(2) {
+    margin: 0 14px;
+  }
+}

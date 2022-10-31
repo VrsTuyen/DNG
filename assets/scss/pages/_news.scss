@@ -1,0 +1,499 @@
+.news {
+  &-content {
+    &__heading {
+      width: 100%;
+      position: relative;
+      border-bottom: 2px solid var(--second-color);
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #d8d8d8;
+      }
+    }
+
+    &-heading__nav {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    &-heading__item {
+      display: inline-block;
+      font-size: 1.6rem;
+      line-height: 2.17rem;
+      color: #9f9f9f;
+      margin-top: 8px;
+      padding: 10px 12px;
+
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+
+    &-heading__item--active {
+      position: relative;
+      color: $second-color;
+      font-weight: 600;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $second-color;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
+    &__item {
+      text-decoration: none;
+      display: flex;
+      margin: 20px 0;
+      position: relative;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &-item {
+      &__img {
+        width: 308px;
+        height: 172px;
+        object-fit: cover;
+        transition: 0.5s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        @include responsible(m) {
+          width: 50%;
+          height: auto;
+        }
+
+        @include responsible(l) {
+          width: 50%;
+          height: auto;
+        }
+      }
+
+      &__decription {
+        margin-left: 42px;
+        margin-right: 166px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &:hover {
+
+          .news-content-item-decription__title,
+          .news-content-item-decription__sub-title {
+            color: $fourth-color;
+          }
+        }
+
+        @include responsible(l) {
+          margin-right: 0;
+          margin-left: 0;
+          width: 50%;
+          padding: 0 8px;
+        }
+
+        @include responsible(t) {
+          margin-right: 0;
+        }
+
+        @include responsible(m) {
+          margin-left: 16px;
+        }
+
+      }
+
+      &-decription {
+        &__title {
+          font-weight: 700;
+          font-size: 1.6rem;
+          line-height: 2.1rem;
+          color: $text-color;
+          margin: 0;
+          transition: 0.5s;
+        }
+
+        &__sub-title {
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.7rem;
+          color: #939393;
+          margin: 12px 0 0 0;
+          transition: 0.5s;
+        }
+      }
+    }
+
+    &__label {
+      --width: 46px;
+      position: absolute;
+      background-color: $primary-color;
+      width: var(--width);
+      height: 50px;
+      left: calc(0% - 14px);
+      font-weight: 600;
+      top: 16px;
+      color: $white-color;
+
+      @include responsible(m) {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &-label {
+      &__numb {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        text-align: center;
+        margin: 4px;
+      }
+
+      &__month {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        text-align: center;
+        margin: -6px 0 0;
+      }
+    }
+
+    &--border {
+      border-left: 1px solid #c1c1c1;
+
+      @include responsible(t) {
+        border: none;
+      }
+    }
+  }
+
+  &-activity {
+    margin-left: 9px;
+
+    @include responsible(t) {
+      margin: 0;
+    }
+
+    &__content {
+      margin-right: 24px;
+    }
+
+    &-img {
+      width: 82px;
+      height: 82px;
+      margin-right: 20px;
+      transition: 0.5s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.8rem;
+      color: $text-color;
+      transition: 0.5s;
+
+      &:hover {
+        color: $fourth-color;
+      }
+    }
+  }
+
+  &-featured-video {
+    margin-top: 56px;
+    margin-left: 9px;
+
+    &__link {
+      text-decoration: none;
+
+    }
+
+    &__content {
+      margin: 20px 0 15px;
+
+      @include responsible(t) {
+        width: 80%;
+        margin: 20px 10%;
+      }
+    }
+
+    &__poster {
+      max-width: 388px;
+      max-height: 220px;
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      object-fit: cover;
+
+      &:hover {
+        opacity: 0.8;
+
+      }
+
+      @include responsible(t) {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        display: flex;
+        max-width: unset;
+        max-height: unset;
+      }
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.8rem;
+      color: $text-color;
+      margin: 16px 56px 6px 0;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      @include responsible(l) {
+        margin-right: 16px;
+      }
+
+      @include responsible(t) {
+        margin-right: 0;
+      }
+    }
+
+    &__date {
+      font-weight: 400;
+      line-height: 1.2rem;
+      font-size: 1.1rem;
+      color: #bdbdbd;
+    }
+  }
+
+  &-recruit {
+    margin-top: 56px;
+    margin-left: 9px;
+
+    &__img {
+      width: 100%;
+      max-width: 387px;
+      max-height: 405px;
+      margin-right: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      object-fit: cover;
+
+      @include responsible(t) {
+        width: 80%;
+        margin: 20px 10%;
+        max-width: none;
+        max-height: none;
+      }
+
+    }
+
+    &-img__link {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      @include responsible(t) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+
+  &-navigation {
+    margin: $margin 0;
+    display: flex;
+    justify-content: center;
+
+    &__button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f1f1f1;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.8rem;
+      margin: 0 16px;
+      user-select: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover.news-navigation__button--active {
+        cursor: default;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--active {
+        background-color: $primary-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.activate {
+  &-search__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 72px;
+
+    @include responsible(t) {
+      margin-top: 0;
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__search {
+    border: 1px solid #c1c1c1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include responsible(t) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    @include responsible(m) {
+      margin-top: 16px;
+    }
+  }
+
+  &-search__input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+  }
+
+  &-input-search__icon {
+    padding: 10px 14px;
+  }
+
+  &__selection {
+    position: relative;
+    display: flex;
+
+    span {
+      font-size: 1.5rem;
+      color: $primary-color;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+  }
+}
+
+.selector {
+  &__quantity {
+    min-width: 200px;
+
+    @include responsible(t) {
+      width: 40% !important;
+    }
+  }
+
+  &__heading {
+    @include responsible(m) {
+      margin-left: 0;
+    }
+  }
+
+  @include responsible(l) {
+    min-width: 12rem;
+  }
+
+  @include responsible(t) {
+    min-width: 10rem;
+    margin-bottom: 1.6rem;
+  }
+
+  @include responsible(t) {
+    width: 30%;
+  }
+
+  &::nth-child(2) {
+    @include responsible(m) {
+      margin: 0 10px;
+    }
+  }
+}
+
+.page {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.navigation {
+  &-mobile {
+    display: none;
+
+    @include responsible(l) {
+      display: none;
+    }
+
+    @include responsible(t) {
+      display: flex;
+    }
+  }
+
+  &-desktop {
+    display: flex;
+
+    @include responsible(l) {
+      display: flex !important;
+    }
+
+    @include responsible(t) {
+      display: none;
+    }
+  }
+}

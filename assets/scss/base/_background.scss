@@ -1,0 +1,75 @@
+:root {
+  --background--color: #e5e5e5;
+  --white-color: #ffffff;
+  --primary-color: #a40000;
+  --second-color: #df0600;
+  --third-color: #e70000;
+  --fourth-color: #dc4c4a;
+  --text-color: #262626;
+}
+
+.bg1 {
+  --active: currentcolor;
+  background-image: url(../img/city.png), url(../img/bg-1.png);
+  background-position: right bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30%, cover;
+}
+
+.bg-1 {
+  background-image: url(../img/bg-1.png);
+  --active: currentcolor;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2 {
+  --active: var(--second-color);
+  background-image: url(../img/bg2.png);
+  background-repeat: no-repeat;
+  color: var(--second-color);
+}
+
+.br-bg {
+  background-image: url(../img/br-background.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.world-bg {
+  --active: var(--primary-color);
+  background: linear-gradient(rgba(38, 38, 38, 0.16), rgba(38, 38, 38, 0.16)), url(../img/world-bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.swirl-pattern {
+  --active: var(--primary-color);
+  background-image: url(../img/swirl-pattern.png);
+}
+
+.people-bg {
+  --active: var(--primary-color);
+  background-image: url(../img/people.png);
+  background-position: bottom 72px right;
+  background-repeat: no-repeat;
+}
+
+.remove-world-linear {
+  background: linear-gradient(#f5f5f5, #f5f5f5), url(../img/world-bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.black-color {
+  color: #262626;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.primary-color {
+  color: #a40000 !important;
+}

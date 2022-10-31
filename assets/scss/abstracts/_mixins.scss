@@ -1,0 +1,20 @@
+@mixin responsible($device) {
+
+  @if $device =="m" or $device =="M" {
+    @media (max-width: 739px) {
+      @content;
+    }
+  }
+
+  @else if $device =="t" or $device =="T" {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  }
+
+  @else if $device =="l" or $device =="L" {
+    @media (min-width: 1024px) and (max-width: 1239px) {
+      @content;
+    }
+  }
+}

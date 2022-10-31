@@ -1,0 +1,319 @@
+.project {
+  &__banner {
+    margin-top: $header-height;
+    background: linear-gradient(rgba(38, 38, 38, 0.28), rgba(38, 38, 38, 0.28)),
+      url(../img/03.png) center / cover no-repeat;
+  }
+
+  &-banner {
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+
+    &__text {
+      display: block;
+      font-size: 5.6rem;
+      font-family: serif;
+      text-align: center;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      color: #f2f2f2;
+      padding: 0 2px;
+    }
+  }
+
+  &__image {
+    padding-top: 4.1rem;
+    margin-bottom: 3.1rem;
+  }
+
+  &-image {
+    &__heading {
+      margin-bottom: 22px;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 387px;
+      height: 387px;
+      object-fit: cover;
+    }
+
+    &__item {
+      margin: 10px 0;
+      width: 387px;
+      height: 387px;
+
+      @include responsible(m) {
+        padding: 10px 16px;
+      }
+
+      img {
+        @include responsible(m) {
+          width: 100%;
+          max-width: unset;
+        }
+      }
+    }
+
+    &__container {
+      padding-bottom: 31px;
+      margin-top: -10px;
+    }
+  }
+
+  &-idea {
+    background-color: #fff;
+    background-image: url(../img/city-grey.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding: 72px 0 120px;
+
+    @include responsible(t) {
+      padding: 32px 16px 60px;
+
+    }
+
+    &__design {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &-design__title {
+      font-family: serif;
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: $primary-color;
+      margin-bottom: 15px;
+      margin-left: 16px;
+      margin-top: 0;
+
+      @include responsible(m) {
+        text-align: center;
+      }
+
+      @include responsible(t) {
+        margin-left: 0;
+      }
+    }
+
+    &-design__sub-title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2.04rem;
+      margin-right: 42px;
+
+      @include responsible(m) {
+        margin-right: 16px;
+        margin-left: 16px;
+      }
+    }
+
+    &-design__img {
+      max-width: 167px;
+      width: 100%;
+      max-height: 105px;
+      margin: 16px 20px 16px 16px;
+
+      @include responsible(l) {
+        margin: 8px 10px 8px;
+
+      }
+    }
+
+    &__container-img {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__label {
+      position: absolute;
+      width: 216px;
+      height: 190px;
+      border-top: 4px solid $primary-color;
+      bottom: 0;
+      left: 0;
+      background-color: $white-color;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      color: #434343;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__video {
+    background-image: url(../img/city-grey.png);
+    background-position: left bottom;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 72px;
+
+    @include responsible(t) {
+      padding: 60px 16px 72px;
+    }
+  }
+
+  &-video {
+    &__title {
+      font-family: serif;
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    &__decription {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 400;
+      color: #434343;
+      margin-right: 102px;
+
+      @include responsible(t) {
+        margin-right: 16px;
+      }
+    }
+
+    &-item {
+      background: linear-gradient(rgba(38, 38, 38, 0.2), rgba(38, 38, 38, 0.2));
+      max-width: 59rem;
+      height: 40rem;
+      width: 100%;
+      // height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+
+      @include responsible(t) {
+        max-width: unset;
+      }
+
+      // &::after {
+      //   content: '';
+      //   background-color: black;
+      //   border: none;
+      //   cursor: pointer;
+      //   width: 4rem;
+      //   height: 4rem;
+      //   border-radius: 50%;
+      //   position: absolute;
+      // }
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.ground-project {
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    max-width: 422px;
+
+    @include responsible(t) {
+      max-width: unset;
+    }
+
+    @include responsible(l) {
+      max-width: unset;
+    }
+
+
+    &:hover a {
+      background-color: #efedee;
+      border-right: 3px solid $primary-color;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__heading-title {
+    color: $text-color;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  &__sub-title {
+    font-size: 1.5rem;
+    color: $text-color;
+    font-weight: 400;
+  }
+}
+
+.overview-project {
+  padding-bottom: 72px;
+
+  &-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+
+    @include responsible(m) {
+      padding-left: 32px;
+      padding-right: 16px;
+    }
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $white-color;
+    margin-left: 24px;
+
+    @include responsible(m) {
+      margin-left: 0;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+  }
+
+  &__item {
+    color: $white-color;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom: 12px;
+  }
+
+
+}
+
+.content-img-left {
+  width: 100%;
+
+  @include responsible(t) {
+    padding: 0 16px;
+  }
+}

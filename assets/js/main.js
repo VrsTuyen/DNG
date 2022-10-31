@@ -302,8 +302,22 @@ $$('.navigation-mobile .news-navigation__button').forEach(function (
   }
 })
 
-$('.slide-content__arrow-down').onclick = function () {
-  $("#more-info").scrollIntoView({
-    block: 'center',
-  })
+
+if ($('.slide-content__arrow-down')) {
+  $('.slide-content__arrow-down').onclick = function () {
+    $("#more-info").scrollIntoView({
+      block: 'center',
+    })
+  }
+
+}
+
+
+// video
+
+
+var video = $('.project-video-item')
+video.play()
+video.onPlay = () => {
+  console.log(video.currentTime)
 }
