@@ -31,6 +31,7 @@
     padding-right: 0;
 }
 
+/* ---------------------mobile-------------------------------- */
 .s-0 {
     display: none;
 }
@@ -139,7 +140,7 @@
     margin-left: 91.66667%;
 }
 
-/* >= Tablet */
+/* ----------------------->= Tablet ----------------------------------*/
 @media (min-width: 740px) {
     .row {
         margin-left: -8px;
@@ -275,7 +276,7 @@
     }
 }
 
-/* PC medium resolution > */
+/* ---------------------------PC medium resolution > ---------------------*/
 @media (min-width: 1113px) {
     .row {
         margin-left: -10px;
@@ -427,14 +428,14 @@
     }
 }
 
-/* Tablet - PC low resolution */
+/* ---------------------Tablet - PC low resolution--------------------------- */
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
         width: 644px;
     }
 }
 
-/* > PC low resolution */
+/* ------------------------> PC low resolution ----------------------------*/
 @media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
         width: 984px;
